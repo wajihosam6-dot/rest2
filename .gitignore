@@ -1,0 +1,20 @@
+# OS Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Agent internal directories & external skill checkouts
+.agents/
+.taste-skill/
+.analysis/
+ai-design-skills/
+
+# Logs & scratch
+*.log
+scratch_*.js
+
+# Large external reference video (Dribbble reference video)
+*.mp4
+!rest-landing-v5-fixed/public/**/*.mp4
