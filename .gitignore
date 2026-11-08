@@ -15,6 +15,11 @@ ai-design-skills/
 *.log
 scratch_*.js
 
+# Temporary backups
+*.bak*
+*.backup*
+
 # Large external reference video (Dribbble reference video)
 *.mp4
 !rest-landing-v5-fixed/public/**/*.mp4
+!public/**/*.mp4
