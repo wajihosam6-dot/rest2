@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-type="place">
 <head>
   <meta charset="UTF-8">
   <script>
@@ -15,7 +15,16 @@
     })();
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شاليه ومنتجع رِيست — عـالـمُـك الـخـاص مِـن الـسَّـكِـيـنـةِ والـرَّفـاهِـيَـــة</title>
+  <title>شاليه ومنتجع رِيست — عالمك الخاص من السكينة والرفاهية</title>
+    <meta name="page-type" content="place">
+    <meta name="site-kind" content="place">
+    <meta name="page-kind" content="place">
+    <meta name="theme-color" content="#073B4C">
+    <link rel="icon" type="image/svg+xml" href="public/assets/brand/favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="شاليه ومنتجع رِيست — عالمك الخاص من السكينة والرفاهية">
+    <meta property="og:description" content="شاليه ومنتجع رِيست الفاخر — تجارب استجمام نهارية وليلية متكاملة، مسبح دافئ بشلال متدفق ومساج مائي، جلسة حكاية بموقد نار طبيعي، باقات غداء الأعمال والمناسبات الخاصة في خصوصية تامة.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"شاليه ومنتجع رِيست","alternateName":"REST Resort & Chalet","description":"شاليه ومنتجع رِيست الفاخر — تجارب استجمام نهارية وليلية متكاملة، مسبح دافئ بشلال متدفق ومساج مائي، جلسة حكاية بموقد نار طبيعي، باقات غداء الأعمال والمناسبات الخاصة في خصوصية تامة."}</script>
   <meta name="description" content="شاليه ومنتجع رِيست الفاخر — تجارب استجمام نهارية وليلية متكاملة، مسبح دافئ بشلال متدفق ومساج مائي، جلسة حكاية بموقد نار طبيعي، باقات غداء الأعمال والمناسبات الخاصة في خصوصية تامة.">
   <link rel="icon" type="image/svg+xml" href="public/assets/brand/favicon.svg">
 
@@ -31,128 +40,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-
-    /* ============================================================
-       THMANYAH OFFICIAL FONTS (Local + CDN Fallback)
-       ============================================================ */
-    @font-face {
-      font-family: "Thmanyah Sans";
-      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Light.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Light.woff2") format("woff2");
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Sans";
-      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Regular.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Regular.woff2") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Sans";
-      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Medium.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Medium.woff2") format("woff2");
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Sans";
-      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Bold.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Bold.woff2") format("woff2");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Sans";
-      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Black.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Black.woff2") format("woff2");
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /* Thmanyah Serif Display (Luxury Headings) */
-    @font-face {
-      font-family: "Thmanyah Serif Display";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Light.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Light.woff2") format("woff2");
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Serif Display";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Regular.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Regular.woff2") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Serif Display";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Medium.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Medium.woff2") format("woff2");
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Serif Display";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Bold.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Bold.woff2") format("woff2");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Serif Display";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Black.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Black.woff2") format("woff2");
-      font-weight: 900;
-      font-style: normal;
-      font-display: swap;
-    }
-
-    /* Thmanyah Serif Text (Articles & Quotes) */
-    @font-face {
-      font-family: "Thmanyah Serif Text";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-text-Regular.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-text/woff2/thmanyah-serif-text-Regular.woff2") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "Thmanyah Serif Text";
-      src: url("public/assets/fonts/thmanyah/thmanyah-serif-text-Bold.woff2") format("woff2"),
-           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-text/woff2/thmanyah-serif-text-Bold.woff2") format("woff2");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-
     /* ==========================================================================
        LUXURY DESIGN TOKENS (Pure Zero-Emoji Architecture)
-       Deep Obsidian Lagoon (#03080B), Warm Champagne Gold (#C5A059), Pure Ivory (#F8FAFC)
+       Deep Obsidian Lagoon (#03080B), Warm Champagne Gold (#24C6C8), Pure Ivory (#F8FAFC)
        ========================================================================== */
     :root {
-      /* Hawaiian Coastal & Vibrant Lagoon Palette */
-      --hawaii-cyan: #06B6D4;
-      --hawaii-azure: #0EA5E9;
-      --hawaii-deep: #0284C7;
-      --hawaii-sunset: #F59E0B;
-      --hawaii-amber: #F97316;
-      --hawaii-palm: #10B981;
-      --hawaii-foam: #E0F2FE;
-      --hawaii-glow: rgba(14, 165, 233, 0.28);
       --font-sans: "Thmanyah Sans", "Alexandria", system-ui, -apple-system, sans-serif;
       --font-serif: "Thmanyah Serif Display", "Thmanyah Sans", Georgia, serif;
+      --font-display: "Thmanyah Serif Display", "Thmanyah Sans", "Alexandria", serif;
       --font-editorial: "Thmanyah Serif Text", "Thmanyah Serif Display", serif;
+
+      /* Tropical identity tokens (brief palette) */
+      --ocean: #087FAD;
+      --turquoise: #24C6C8;
+      --palm: #0E7490;
+      --sunshine: #F9A8D4;
+      --coral: #FB7185;
+      --sand: #FFF9ED;
+      --deep-ocean: #073B4C;
+      --mint: #FCE7F3;
+      --grad-tropical: linear-gradient(135deg, #087FAD 0%, #24C6C8 55%, #EC4899 100%);
+      --grad-sunset: linear-gradient(135deg, #F9A8D4 0%, #EC4899 100%);
 
       /* Spacing Scale */
       --sp-0: 0px;
@@ -181,31 +89,31 @@
       --r-full: 9999px;
 
       /* Surfaces: Deep Flat Obsidian Tones */
-      --bg-ground: #03080B;
-      --bg-canvas: #061117;
-      --bg-card: #0A1A22;
-      --bg-elevated: #0E2430;
-      --bg-hover: #132F3E;
-      --bg-glass: rgba(6, 17, 23, 0.85);
+      --bg-ground: #04222E;
+      --bg-canvas: #073B4C;
+      --bg-card: #0A4A5E;
+      --bg-elevated: #0D5A70;
+      --bg-hover: #11607A;
+      --bg-glass: rgba(7, 59, 76, 0.85);
 
       /* Accents: Fine Champagne & Warm Gold */
-      --gold-primary: #C5A059;
-      --gold-light: #DFC38A;
-      --gold-hover: #D4AF37;
-      --gold-deep: #9E7D3E;
-      --gold-glow: rgba(197, 160, 89, 0.18);
+      --gold-primary: #24C6C8;
+      --gold-light: #F9A8D4;
+      --gold-hover: #1AA8AA;
+      --gold-deep: #BE185D;
+      --gold-glow: rgba(236, 72, 153, 0.22);
 
       /* Text Hierarchy */
-      --text-pure: #FFFFFF;
-      --text-ivory: #F8FAFC;
-      --text-sub: #CBD5E1;
-      --text-muted: #8295A5;
+      --text-pure: #FFF9ED;
+      --text-ivory: #FFF9ED;
+      --text-sub: #FBCFE8;
+      --text-muted: #9CC3CE;
 
       /* Borders */
       --border-subtle: rgba(255, 255, 255, 0.08);
       --border-card: rgba(255, 255, 255, 0.12);
-      --border-gold: rgba(197, 160, 89, 0.35);
-      --border-gold-strong: rgba(197, 160, 89, 0.7);
+      --border-gold: rgba(36, 198, 200, 0.35);
+      --border-gold-strong: rgba(36, 198, 200, 0.7);
 
       /* Motion */
       --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
@@ -324,12 +232,12 @@
       0%, 100% {
         transform: scale(1);
         opacity: 0.75;
-        box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.45);
+        box-shadow: 0 0 0 0 rgba(36, 198, 200, 0.45);
       }
       50% {
         transform: scale(1.22);
         opacity: 1;
-        box-shadow: 0 0 8px 3px rgba(197, 160, 89, 0.55);
+        box-shadow: 0 0 8px 3px rgba(36, 198, 200, 0.55);
       }
     }
 
@@ -373,31 +281,31 @@
        ========================================================================== */
     [data-theme="light"] {
       /* Surfaces: Clean Mediterranean Lagoon Ivory & Pearl */
-      --bg-ground: #F4F8FA;
-      --bg-canvas: #EBF2F6;
+      --bg-ground: #FFF7F9;
+      --bg-canvas: #FDEEF3;
       --bg-card: #FFFFFF;
-      --bg-elevated: #F8FBFC;
-      --bg-hover: #E3EFF5;
-      --bg-glass: rgba(255, 255, 255, 0.88);
+      --bg-elevated: #FFF9ED;
+      --bg-hover: #FADCE8;
+      --bg-glass: rgba(255, 249, 237, 0.88);
 
       /* Accents: Radiant Coastal Azure (Zero Brown) */
-      --gold-primary: #0284C7;
-      --gold-light: #0EA5E9;
-      --gold-hover: #0369A1;
-      --gold-deep: #075985;
-      --gold-glow: rgba(2, 132, 199, 0.16);
+      --gold-primary: #087FAD;
+      --gold-light: #EC4899;
+      --gold-hover: #066B8A;
+      --gold-deep: #BE185D;
+      --gold-glow: rgba(236, 72, 153, 0.16);
 
       /* Text Hierarchy: Deep Lagoon Obsidian & Oceanic Slate */
-      --text-pure: #091922;
-      --text-ivory: #162B36;
-      --text-sub: #456272;
-      --text-muted: #6E8999;
+      --text-pure: #073B4C;
+      --text-ivory: #0B3D4E;
+      --text-sub: #33565F;
+      --text-muted: #5B7A85;
 
       /* Borders: Subtle Marine Glass Tones */
       --border-subtle: rgba(10, 35, 48, 0.08);
       --border-card: rgba(10, 35, 48, 0.12);
-      --border-gold: rgba(2, 132, 199, 0.38);
-      --border-gold-strong: rgba(2, 132, 199, 0.75);
+      --border-gold: rgba(8, 127, 173, 0.38);
+      --border-gold-strong: rgba(8, 127, 173, 0.75);
     }
 
     /* Smooth Transition during Theme Shifts */
@@ -732,7 +640,7 @@
     }
 
     .theme-icon-indicator.night-icon {
-      color: #DFC38A;
+      color: #F9A8D4;
       opacity: 1;
       transform: scale(1);
     }
@@ -757,8 +665,8 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #DFC38A, #C5A059);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 0 8px rgba(197, 160, 89, 0.4);
+      background: linear-gradient(135deg, #F9A8D4, #24C6C8);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), 0 0 8px rgba(36, 198, 200, 0.4);
       transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), background 0.45s ease;
       z-index: 5;
     }
@@ -853,7 +761,7 @@
     }
 
     .theme-ripple-wave.wave-1 {
-      border: 3px solid rgba(197, 160, 89, 0.7);
+      border: 3px solid rgba(36, 198, 200, 0.7);
       animation: horizonWaveSpread 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     }
 
@@ -1038,7 +946,7 @@
     .btn-gold:hover {
       background-color: var(--gold-hover);
       transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(197, 160, 89, 0.3);
+      box-shadow: 0 10px 28px rgba(36, 198, 200, 0.3);
     }
 
     .btn-secondary {
@@ -1309,7 +1217,7 @@
 
     .hero-heading {
       margin-bottom: var(--sp-200);
-      background: linear-gradient(135deg, #FFFFFF 20%, #DFC38A 80%, #C5A059 100%);
+      background: linear-gradient(135deg, #FFFFFF 20%, #F9A8D4 80%, #24C6C8 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -1349,7 +1257,7 @@
     /* Pinned Scene Tracker Dock */
     .hero-scene-tracker {
       position: absolute;
-      bottom: var(--sp-300);
+      bottom: calc(var(--sp-300) + 64px);
       right: 0;
       left: 0;
       z-index: 15;
@@ -1514,7 +1422,7 @@
 
     @media (max-width: 768px) {
       .hero-scene-tracker {
-        bottom: var(--sp-150);
+        bottom: calc(var(--sp-150) + 64px);
       }
       .hero-scroll-cue {
         display: none;
@@ -1667,7 +1575,7 @@
 
     .morph-track-pill.active {
       background-color: var(--bg-card);
-      border-color: rgba(197, 160, 89, 0.5);
+      border-color: rgba(36, 198, 200, 0.5);
       color: var(--gold-light);
       font-weight: 600;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
@@ -1736,8 +1644,8 @@
       opacity: 1;
       z-index: 30;
       pointer-events: auto;
-      border-color: rgba(197, 160, 89, 0.75);
-      box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.85), 0 0 32px -4px rgba(197, 160, 89, 0.25);
+      border-color: rgba(36, 198, 200, 0.75);
+      box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.85), 0 0 32px -4px rgba(36, 198, 200, 0.25);
       background-color: #0C1E28;
     }
 
@@ -2097,7 +2005,7 @@
       border-color: var(--gold-primary);
       color: var(--gold-light);
       font-weight: 600;
-      box-shadow: 0 4px 16px rgba(197, 160, 89, 0.18);
+      box-shadow: 0 4px 16px rgba(36, 198, 200, 0.18);
     }
 
     [data-theme="light"] .f-pill-btn.active {
@@ -2516,7 +2424,7 @@
       position: absolute;
       inset: 0;
       border-radius: inherit;
-      background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), rgba(197, 160, 89, 0.12), transparent 70%);
+      background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), rgba(36, 198, 200, 0.12), transparent 70%);
       opacity: 0;
       transition: opacity 0.3s ease;
       pointer-events: none;
@@ -2530,8 +2438,8 @@
     .dir-tile:hover,
     .dir-tile:focus-within {
       transform: translateY(-6px);
-      border-color: rgba(197, 160, 89, 0.55);
-      box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 24px -6px rgba(197, 160, 89, 0.25);
+      border-color: rgba(36, 198, 200, 0.55);
+      box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.8), 0 0 24px -6px rgba(36, 198, 200, 0.25);
       background-color: var(--bg-card-hover);
     }
 
@@ -2624,8 +2532,8 @@
       font-weight: 500;
       padding: 2px 8px;
       border-radius: var(--r-full);
-      background-color: rgba(197, 160, 89, 0.08);
-      border: 1px solid rgba(197, 160, 89, 0.2);
+      background-color: rgba(36, 198, 200, 0.08);
+      border: 1px solid rgba(36, 198, 200, 0.2);
       color: var(--gold-light);
     }
 
@@ -3310,9 +3218,10 @@
     .suffo-hero-corners {
       position: absolute;
       inset: 0;
-      padding: var(--sp-300) var(--sp-400);
+      padding: calc(var(--sp-200) + 80px) var(--sp-400) var(--sp-300);
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       pointer-events: none;
       z-index: 12;
       font-size: 0.8125rem;
@@ -3337,8 +3246,8 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background-color: #22c55e;
-      box-shadow: 0 0 10px #22c55e;
+      background-color: #EC4899;
+      box-shadow: 0 0 10px #EC4899;
       animation: hotspotRadar 2s infinite;
     }
 
@@ -3415,7 +3324,7 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(197, 160, 89, 0.15);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(36, 198, 200, 0.15);
       opacity: 0;
       visibility: hidden;
       transform: translate3d(0, 12px, 0) scale(0.94);
@@ -3574,12 +3483,12 @@
       color: var(--brand-sky);
     }
     .suffo-section-marker span {
-      color: #22c55e;
+      color: #EC4899;
       font-size: 1rem;
       line-height: 1;
     }
     .suffo-dash {
-      color: #22c55e;
+      color: #EC4899;
       margin: 0 4px;
       font-weight: 700;
     }
@@ -3827,8 +3736,8 @@
       opacity: 1;
       z-index: 30;
       pointer-events: auto;
-      border-color: rgba(197, 160, 89, 0.8);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(197, 160, 89, 0.25);
+      border-color: rgba(36, 198, 200, 0.8);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(36, 198, 200, 0.25);
     }
     [data-theme="light"] .package-morph-card.is-center {
       border-color: var(--brand-sky);
@@ -4007,7 +3916,7 @@
       font-family: var(--font-sans);
       font-size: 2rem;
       font-weight: 700;
-      color: #22c55e;
+      color: #EC4899;
       line-height: 1;
       position: relative;
       z-index: 2;
@@ -4181,7 +4090,7 @@
     }
     .suffo-dir-row:hover,
     .suffo-dir-row.active {
-      background-color: #22c55e;
+      background-color: #EC4899;
       color: #03080B !important;
       padding-inline: 26px;
       border-radius: 12px;
@@ -4275,7 +4184,7 @@
       font-family: var(--font-sans);
       font-size: clamp(1.5rem, 4vw, 3rem);
       font-weight: 600;
-      color: #22c55e;
+      color: #EC4899;
       text-decoration: none;
       margin-top: 12px;
       transition: color 0.3s, text-shadow 0.3s;
@@ -4564,126 +4473,215 @@
     }
 
   
-    /* ==========================================================================
-       HAWAIIAN LAGOON WAVE DYNAMICS & REMOTION SPRING MOTION
-       Inspired by github.com/remotion-dev/remotion
-       ========================================================================== */
-    .hawaii-wave-container {
-      position: relative;
-      width: 100%;
-      height: 90px;
-      overflow: hidden;
-      margin-top: -45px;
-      margin-bottom: -10px;
-      z-index: 10;
-      pointer-events: none;
+/* ============ REST Tropical v9 — identity layer (tokens already remapped above) ============ */
+h1, h2 { font-family: var(--font-display); letter-spacing: 0; }
+.skip-link { position: fixed; top: -60px; right: 16px; z-index: 9999; background: var(--deep-ocean); color: var(--sand); padding: 10px 18px; border-radius: 999px; font-weight: 700; transition: top .25s var(--ease-fluid); text-decoration: none; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid var(--turquoise); outline-offset: 3px; border-radius: 6px; }
+.tropical-band { height: 6px; background: var(--grad-tropical); border: 0; }
+/* Cinematic intro: title sequence over deep ocean; video layer (Remotion) sits behind the title */
+.cinematic-intro { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center; background: linear-gradient(160deg, #04222E 0%, #073B4C 55%, #087FAD 100%); animation: intro-out .7s ease 2.9s forwards; pointer-events: none; }
+.cinematic-intro-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .6s ease; }
+.cinematic-intro-video.is-live { opacity: 1; }
+.cinematic-intro-title { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding: 0 20px; animation: intro-title-in 1.1s var(--ease-cinematic) both; }
+.cinematic-intro-eyebrow { color: var(--mint); letter-spacing: .45em; font-size: .8rem; font-weight: 600; }
+.cinematic-intro-word { font-family: "Cormorant Garamond", serif; font-size: clamp(4.5rem, 18vw, 10rem); line-height: .9; color: var(--sand); letter-spacing: .08em; }
+.cinematic-intro-rule { width: min(280px, 60vw); height: 3px; background: var(--grad-sunset); border-radius: 99px; animation: intro-rule 1.2s var(--ease-cinematic) .5s both; }
+.cinematic-intro-ar { font-family: var(--font-display); font-size: clamp(1.3rem, 4vw, 2rem); color: var(--sand); }
+.cinematic-intro-en { color: var(--mint); letter-spacing: .35em; font-size: .75rem; }
+@keyframes intro-title-in { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes intro-rule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes intro-out { to { opacity: 0; visibility: hidden; } }
+/* Lifestyle: editorial, three moments, one wide frame */
+.lifestyle { padding: var(--sp-800) 0; background: var(--bg-canvas); }
+.lifestyle-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: var(--sp-500); align-items: start; }
+.lifestyle-moments { display: grid; gap: var(--sp-400); }
+.lifestyle-moment { display: grid; grid-template-columns: 168px 1fr; gap: var(--sp-250); align-items: center; background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--r-2xl); overflow: hidden; transition: transform .3s var(--ease-fluid), box-shadow .3s var(--ease-fluid); }
+.lifestyle-moment:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -18px rgba(7, 59, 76, .35); }
+.lifestyle-moment img { width: 168px; height: 100%; min-height: 150px; object-fit: cover; transition: transform .6s var(--ease-fluid); }
+.lifestyle-moment:hover img { transform: scale(1.03); }
+.lifestyle-moment-body { padding: var(--sp-200) var(--sp-250) var(--sp-200) 0; }
+.lifestyle-moment-body h3 { margin: 0 0 6px; font-size: 1.25rem; }
+.lifestyle-moment-body p { margin: 0; color: var(--text-sub); line-height: 1.8; }
+.lifestyle-wide { position: relative; border-radius: var(--r-3xl); overflow: hidden; min-height: 520px; }
+.lifestyle-wide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.lifestyle-wide figcaption { position: absolute; inset-inline: 0; bottom: 0; padding: var(--sp-500) var(--sp-400) var(--sp-300); background: linear-gradient(to top, rgba(4, 34, 46, .85), transparent); color: var(--sand); font-family: var(--font-display); font-size: 1.5rem; line-height: 1.6; }
+/* Resort map: illustrative, explicitly non-geographic */
+.resort-map { padding: var(--sp-800) 0; background: var(--bg-ground); }
+.map-shell { display: grid; grid-template-columns: 1.2fr .8fr; gap: var(--sp-400); align-items: stretch; }
+.map-canvas { position: relative; min-height: 480px; border-radius: var(--r-3xl); overflow: hidden; border: 1px solid var(--border-card); background: linear-gradient(150deg, #0A4A5E 0%, #087FAD 55%, #0E7490 130%); }
+.map-canvas::before { content: ""; position: absolute; inset: 0; background: radial-gradient(420px 220px at 70% 20%, rgba(249, 168, 212, .35), transparent 70%), radial-gradient(500px 300px at 20% 85%, rgba(36, 198, 200, .3), transparent 70%); }
+.map-canvas .map-water { position: absolute; top: 8%; inset-inline-start: 8%; width: 46%; height: 34%; border-radius: 46% 54% 55% 45% / 55% 45% 55% 45%; background: rgba(217, 244, 233, .22); border: 2px dashed rgba(255, 249, 237, .55); display: flex; align-items: center; justify-content: center; color: var(--sand); font-weight: 700; }
+.map-marker { position: absolute; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; color: var(--sand); font-family: inherit; }
+.map-marker .pin { width: 46px; height: 46px; border-radius: 50% 50% 50% 4px; transform: rotate(-45deg); background: var(--sand); color: var(--deep-ocean); display: flex; align-items: center; justify-content: center; font-weight: 800; box-shadow: 0 10px 24px rgba(4, 34, 46, .45); transition: transform .25s var(--ease-fluid), background .25s; }
+.map-marker .pin span { transform: rotate(45deg); }
+.map-marker .pin-label { background: rgba(4, 34, 46, .72); padding: 4px 10px; border-radius: 999px; font-size: .8rem; white-space: nowrap; }
+.map-marker:hover .pin, .map-marker:focus-visible .pin { transform: rotate(-45deg) scale(1.12); background: var(--sunshine); }
+.map-marker[aria-pressed="true"] .pin { background: var(--coral); color: #fff; }
+.map-panel { background: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--r-3xl); padding: var(--sp-400); display: flex; flex-direction: column; gap: var(--sp-150); }
+.map-panel img { width: 100%; height: 220px; object-fit: cover; border-radius: var(--r-xl); }
+.map-panel h3 { margin: 0; font-size: 1.5rem; }
+.map-panel p { margin: 0; color: var(--text-sub); line-height: 1.8; }
+.map-panel .map-area { font-weight: 800; color: var(--gold-primary); }
+.map-note { margin-top: var(--sp-300); color: var(--text-muted); font-size: .9rem; line-height: 1.8; }
+/* Packages compare table */
+.pkg-compare { margin-top: var(--sp-500); overflow-x: auto; border: 1px solid var(--border-card); border-radius: var(--r-2xl); background: var(--bg-card); }
+.pkg-compare table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.pkg-compare th, .pkg-compare td { padding: 14px 16px; text-align: start; border-bottom: 1px solid var(--border-subtle); }
+.pkg-compare thead th { background: var(--bg-elevated); font-family: var(--font-display); font-size: 1.05rem; }
+.pkg-compare tbody tr:last-child td { border-bottom: 0; }
+.pkg-compare .pkg-price { font-weight: 800; color: var(--gold-primary); white-space: nowrap; }
+.pkg-compare td:first-child { font-weight: 700; }
+/* Booking multi-step */
+.bk-steps-nav { display: flex; gap: 8px; list-style: none; margin: 0 0 var(--sp-300); padding: 0; }
+.bk-steps-nav li { flex: 1; }
+.bk-step-btn { width: 100%; display: flex; align-items: center; gap: 10px; background: var(--bg-card); border: 1px solid var(--border-card); color: var(--text-sub); border-radius: var(--r-xl); padding: 12px 14px; font: inherit; cursor: pointer; text-align: start; }
+.bk-step-btn .bk-num { width: 30px; height: 30px; flex: 0 0 30px; border-radius: 50%; background: var(--bg-elevated); color: var(--text-pure); display: flex; align-items: center; justify-content: center; font-weight: 800; }
+.bk-step-btn[aria-current="step"] { border-color: var(--gold-primary); color: var(--text-pure); }
+.bk-step-btn[aria-current="step"] .bk-num { background: var(--grad-tropical); color: #fff; }
+.bk-step-btn.is-done .bk-num { background: var(--palm); color: #fff; }
+.bk-step { display: none; }
+.bk-step.is-active { display: block; animation: bk-in .45s var(--ease-fluid) both; }
+@keyframes bk-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.bk-step-actions { display: flex; gap: 10px; margin-top: var(--sp-300); }
+.bk-step-actions .btn { flex: 1; justify-content: center; }
+.bk-review { background: var(--bg-elevated); border: 1px dashed var(--border-gold); border-radius: var(--r-xl); padding: var(--sp-250); display: grid; gap: 8px; margin-bottom: var(--sp-250); }
+.bk-review div { display: flex; justify-content: space-between; gap: 12px; }
+.bk-review dt { color: var(--text-muted); }
+.bk-review dd { margin: 0; font-weight: 700; text-align: end; }
+.bk-error { color: #FF9A8A; font-weight: 700; margin-top: 8px; display: none; }
+.bk-error.is-show { display: block; }
+[data-theme="light"] .bk-error { color: #B3261E; }
+/* Tropical touches on existing components */
+.suffo-card-tag { background: var(--turquoise); color: #04222E; }
+.suffo-price-num { color: var(--gold-primary); }
+.btn-whatsapp { background: var(--grad-tropical); }
+@media (max-width: 900px) {
+  .lifestyle-grid, .map-shell { grid-template-columns: 1fr; }
+  .lifestyle-wide { min-height: 340px; }
+  .map-canvas { min-height: 420px; }
+  .bk-steps-nav { flex-direction: column; }
+}
+@media (max-width: 560px) {
+  .lifestyle-moment { grid-template-columns: 120px 1fr; }
+  .lifestyle-moment img { width: 120px; min-height: 120px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cinematic-intro { animation: none; display: none; }
+  .bk-step.is-active { animation: none; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+    
+    /* ================================================================
+       v10 — MOBILE PASS + SEA/PINK + THMANYAH + BOTANICAL ART
+       ================================================================ */
+    /* ============================================================
+       THMANYAH OFFICIAL FONTS (Local + CDN Fallback)
+       ============================================================ */
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Light.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Light.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Regular.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Medium.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Medium.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Bold.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Sans";
+      src: url("public/assets/fonts/thmanyah/thmanyah-sans-Black.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-sans/woff2/thmanyah-sans-Black.woff2") format("woff2");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
     }
 
-    .hawaii-wave-svg {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      bottom: 0;
-      left: 0;
+    /* Thmanyah Serif Display (Luxury Headings) */
+    @font-face {
+      font-family: "Thmanyah Serif Display";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Light.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Light.woff2") format("woff2");
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Display";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Regular.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Display";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Medium.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Medium.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Display";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Bold.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Display";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-display-Black.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-display/woff2/thmanyah-serif-display-Black.woff2") format("woff2");
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
     }
 
-    .wave-path-back {
-      fill: rgba(14, 165, 233, 0.15);
-      animation: waveDriftBack 14s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+    /* Thmanyah Serif Text (Articles & Quotes) */
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-text-Regular.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-text/woff2/thmanyah-serif-text-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Thmanyah Serif Text";
+      src: url("public/assets/fonts/thmanyah/thmanyah-serif-text-Bold.woff2") format("woff2"),
+           url("https://cdn.jsdelivr.net/gh/engdawood/thmanyah-font-web@4266a9d/fonts/thmanyah-serif-text/woff2/thmanyah-serif-text-Bold.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
     }
 
-    .wave-path-mid {
-      fill: rgba(6, 182, 212, 0.22);
-      animation: waveDriftMid 9s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
-    }
 
-    .wave-path-front {
-      fill: var(--bg-ground);
-      animation: waveDriftFront 6s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-    }
-
-    @keyframes waveDriftBack {
-      0% { transform: translate3d(0, 0, 0) scaleY(0.9); }
-      100% { transform: translate3d(-40px, 6px, 0) scaleY(1.1); }
-    }
-
-    @keyframes waveDriftMid {
-      0% { transform: translate3d(-30px, 4px, 0) scaleY(1.05); }
-      100% { transform: translate3d(30px, -4px, 0) scaleY(0.95); }
-    }
-
-    @keyframes waveDriftFront {
-      0% { transform: translate3d(0, 0, 0) scaleY(1); }
-      100% { transform: translate3d(-20px, 3px, 0) scaleY(1.04); }
-    }
-
-    /* Remotion Elastic Hover Spring Class */
-    .remotion-spring-hover {
-      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
-                  box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.35s ease;
-    }
-    .remotion-spring-hover:hover {
-      transform: translateY(-8px) scale(1.015);
-    }
-
-    /* Arabic Typographic Kashida / Elongation Styling */
-    .ar-kashida {
-      display: inline-block;
-      font-weight: inherit;
-      letter-spacing: normal;
-      font-feature-settings: "kern" 1, "liga" 1;
-    }
-
-    /* Coordinated Layout Spacing Enhancements (Anti-Collision) */
-    .suffo-metric-strip-track {
-      grid-template-columns: repeat(3, 1fr) !important;
-      gap: 24px !important;
-      margin-bottom: var(--sp-600) !important;
-    }
-    @media (max-width: 900px) {
-      .suffo-metric-strip-track {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px !important;
-      }
-    }
-    @media (max-width: 600px) {
-      .suffo-metric-strip-track {
-        grid-template-columns: 1fr !important;
-        gap: 14px !important;
-      }
-    }
-
-    /* Packages Deck anti-collision spacing */
-    .suffo-packages-layout {
-      gap: clamp(48px, 5vw, 84px) !important;
-    }
-    .package-morph-card.is-right {
-      transform: translate3d(90px, 12px, 0) scale(0.93) rotate(3deg) !important;
-    }
-    .package-morph-card.is-left {
-      transform: translate3d(-200px, 16px, 0) scale(0.92) rotate(-3deg) !important;
-    }
-    .package-morph-card.is-far-right {
-      transform: translate3d(160px, 26px, 0) scale(0.86) rotate(6deg) !important;
-    }
-
-    /* Directory table padding and spacing */
-    .suffo-dir-row {
-      grid-template-columns: 1.8fr 2.6fr 1fr !important;
-      gap: 24px !important;
-      padding: 24px 28px !important;
-    }
-
-    /* Tagline quote line height */
-    .tagline-editorial-quote {
-      line-height: 2.1 !important;
-    }
-    .reveal-token {
-      margin: 0 4px !important;
-    }
-
-  
+    /* --- Botanical scroll art (ported from the repo variant) --- */
     /* ==========================================================================
        BOTANICAL SCROLL ART (Palm Tree & Red Roses with Draw-on-Scroll Animation)
        ========================================================================== */
@@ -4745,296 +4743,8 @@
       transition-delay: 0.95s;
     }
 
-    /* ==========================================================================
-       TROPICAL LIFESTYLE SECTION STYLES
-       ========================================================================== */
-    .tropical-lifestyle-section {
-      position: relative;
-      padding: clamp(80px, 9vw, 120px) 0;
-      background: linear-gradient(180deg, var(--bg-ground) 0%, rgba(6, 17, 23, 0.95) 50%, var(--bg-ground) 100%);
-      overflow: hidden;
-    }
-    [data-theme="light"] .tropical-lifestyle-section {
-      background: linear-gradient(180deg, var(--bg-ground) 0%, #EBF6FA 50%, var(--bg-ground) 100%);
-    }
 
-    .lifestyle-container {
-      position: relative;
-      z-index: 10;
-    }
-
-    .lifestyle-stories-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    @media (max-width: 992px) {
-      .lifestyle-stories-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-    }
-    @media (max-width: 640px) {
-      .lifestyle-stories-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
-    }
-
-    .lifestyle-card {
-      background: #08151D;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
-      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.35s ease,
-                  box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    [data-theme="light"] .lifestyle-card {
-      background: #FFFFFF;
-      border-color: rgba(2, 132, 199, 0.16);
-      box-shadow: 0 12px 32px rgba(2, 132, 199, 0.08);
-    }
-    .lifestyle-card:hover {
-      border-color: var(--hawaii-azure);
-      box-shadow: 0 24px 50px -10px rgba(14, 165, 233, 0.3);
-      transform: translateY(-8px);
-    }
-
-    .lifestyle-card-visual {
-      position: relative;
-      width: 100%;
-      height: 230px;
-      overflow: hidden;
-    }
-    .lifestyle-card-visual img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .lifestyle-card:hover .lifestyle-card-visual img {
-      transform: scale(1.08);
-    }
-    .lifestyle-visual-tint {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 40%, rgba(3, 8, 11, 0.8) 100%);
-    }
-    .lifestyle-chip {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background: rgba(8, 21, 29, 0.85);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      color: #38BDF8;
-      border: 1px solid rgba(56, 189, 248, 0.3);
-      padding: 4px 12px;
-      border-radius: 100px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      z-index: 3;
-    }
-
-    .lifestyle-card-body {
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      justify-content: space-between;
-    }
-    .lifestyle-card-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-pure);
-      margin-bottom: 10px;
-      line-height: 1.35;
-    }
-    .lifestyle-card-text {
-      font-size: 0.875rem;
-      color: var(--text-sub);
-      line-height: 1.65;
-      margin-bottom: 20px;
-    }
-    .lifestyle-card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 14px;
-      font-size: 0.75rem;
-    }
-    [data-theme="light"] .lifestyle-card-footer {
-      border-top-color: rgba(2, 132, 199, 0.12);
-    }
-    .lifestyle-metric-tag {
-      color: var(--hawaii-cyan);
-      font-weight: 600;
-    }
-    [data-theme="light"] .lifestyle-metric-tag {
-      color: var(--hawaii-deep);
-    }
-    .lifestyle-read-link {
-      color: var(--text-pure);
-      font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s;
-    }
-    .lifestyle-card:hover .lifestyle-read-link {
-      color: var(--hawaii-azure);
-    }
-
-    /* ==========================================================================
-       CRYSTAL-CLEAR CONTRAST FOR SUFFO METRIC CARDS (CLICK & REVEALED)
-       ========================================================================== */
-    .suffo-metric-card {
-      position: relative;
-      height: 320px;
-      border-radius: 20px;
-      background: #08151D;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      overflow: hidden;
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      user-select: none;
-      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.35s ease,
-                  box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    [data-theme="light"] .suffo-metric-card {
-      background: #FFFFFF;
-      border-color: rgba(2, 132, 199, 0.18);
-      box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08);
-    }
-
-    /* REVEALED / ACTIVE STATE: Deep Glass Scrim + High-Contrast Typography */
-    .suffo-metric-card.is-revealed,
-    .suffo-metric-card:hover {
-      border-color: #0EA5E9 !important;
-      box-shadow: 0 20px 48px -8px rgba(14, 165, 233, 0.4), 0 0 24px rgba(6, 182, 212, 0.3) !important;
-      transform: translateY(-8px);
-    }
-    .suffo-metric-card.is-revealed .suffo-metric-bg-photo,
-    .suffo-metric-card:hover .suffo-metric-bg-photo {
-      opacity: 0.92 !important;
-      transform: scale(1);
-    }
-    .suffo-metric-card.is-revealed .suffo-metric-photo-tint,
-    .suffo-metric-card:hover .suffo-metric-photo-tint {
-      opacity: 1 !important;
-      background: linear-gradient(180deg, rgba(2, 10, 16, 0.75) 0%, rgba(2, 10, 16, 0.94) 100%) !important;
-      backdrop-filter: blur(2px);
-      -webkit-backdrop-filter: blur(2px);
-    }
-
-    /* High Contrast Typography in Active/Revealed State */
-    .suffo-metric-card.is-revealed .suffo-metric-top,
-    .suffo-metric-card:hover .suffo-metric-top {
-      color: #FFFFFF !important;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
-      font-size: 1.05rem !important;
-      font-weight: 700 !important;
-    }
-    .suffo-metric-card.is-revealed .suffo-metric-value,
-    .suffo-metric-card:hover .suffo-metric-value {
-      color: #38BDF8 !important;
-      text-shadow: 0 0 18px rgba(56, 189, 248, 0.7), 0 2px 8px rgba(0, 0, 0, 0.9) !important;
-      font-size: 2.35rem !important;
-    }
-    .suffo-metric-card.is-revealed .suffo-metric-watermark,
-    .suffo-metric-card:hover .suffo-metric-watermark {
-      color: rgba(255, 255, 255, 0.16) !important;
-    }
-    .suffo-metric-card.is-revealed .suffo-metric-bottom,
-    .suffo-metric-card:hover .suffo-metric-bottom {
-      color: #F8FAFC !important;
-      border-top-color: rgba(255, 255, 255, 0.28) !important;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
-      font-weight: 600;
-    }
-    .suffo-metric-card.is-revealed .suffo-metric-bottom span:first-child,
-    .suffo-metric-card:hover .suffo-metric-bottom span:first-child {
-      background: rgba(14, 165, 233, 0.35);
-      color: #38BDF8;
-      border: 1px solid rgba(56, 189, 248, 0.5);
-      padding: 3px 8px;
-      border-radius: 6px;
-    }
-
-    /* ==========================================================================
-       MOBILE-FIRST RESPONSIVE AUDIT & OVERFLOW GUARDS
-       ========================================================================== */
-    @media (max-width: 640px) {
-      .hero-wrap {
-        height: 190vh;
-      }
-      .hero-scene-content {
-        padding-top: calc(70px + var(--sp-200));
-        padding-bottom: var(--sp-400);
-      }
-      .hero-heading {
-        font-size: clamp(1.75rem, 6.8vw, 2.35rem) !important;
-        line-height: 1.35 !important;
-      }
-      .hero-desc {
-        font-size: 0.9375rem !important;
-        line-height: 1.65 !important;
-        margin-bottom: 20px !important;
-      }
-      .hero-ctas-row {
-        flex-direction: column !important;
-        width: 100% !important;
-        gap: 12px !important;
-      }
-      .hero-ctas-row .btn {
-        width: 100% !important;
-        justify-content: center !important;
-        padding: 14px 20px !important;
-        font-size: 0.9375rem !important;
-      }
-
-      /* Botanical Art responsive scaling on mobile */
-      .botanical-palm {
-        width: 170px !important;
-        bottom: -20px !important;
-        right: -10px !important;
-        opacity: 0.75 !important;
-      }
-      .botanical-rose {
-        width: 150px !important;
-        bottom: -15px !important;
-        left: -5px !important;
-        opacity: 0.75 !important;
-      }
-
-      /* Sections vertical padding on mobile */
-      .tropical-lifestyle-section,
-      .cinema-gallery-wrap,
-      .steps-wrap,
-      .faq-wrap,
-      .calculator-wrap {
-        padding: 60px 0 !important;
-      }
-
-      /* Clean container padding */
-      .container {
-        padding-inline: 18px !important;
-      }
-    }
-
-  
-    /* ==========================================================================
-       PROMINENT UNOBSTRUCTED PALM SHOWCASE IN TROPICAL LIFESTYLE HEADER
-       ========================================================================== */
+    /* Palm showcase card (lifestyle header) */
     .lifestyle-stage-header {
       display: grid;
       grid-template-columns: 1.25fr 0.85fr;
@@ -5043,47 +4753,8 @@
       margin-bottom: var(--sp-600);
       position: relative;
     }
-
-    .lifestyle-intro-col {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: right;
-    }
-
-    .lifestyle-meta-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: var(--sp-100);
-    }
-
-    .lifestyle-meta-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      border-radius: 100px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      font-size: 0.8125rem;
-      font-weight: 600;
-      color: var(--text-pure);
-    }
-    [data-theme="light"] .lifestyle-meta-chip {
-      background: #FFFFFF;
-      border-color: rgba(2, 132, 199, 0.16);
-      color: var(--text-pure);
-      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.06);
-    }
-    .lifestyle-meta-chip svg {
-      color: var(--hawaii-cyan);
-    }
-    [data-theme="light"] .lifestyle-meta-chip svg {
-      color: var(--hawaii-deep);
-    }
-
-    /* Palm Showcase Card: 100% Clear, Prominent, Never Covered */
+    .lifestyle-intro-col { display: flex; flex-direction: column; align-items: flex-start; text-align: start; }
+    .lifestyle-stage-header .section-head { text-align: start; }
     .lifestyle-palm-showcase-card {
       position: relative;
       height: 380px;
@@ -5102,9 +4773,7 @@
     [data-theme="light"] .lifestyle-palm-showcase-card {
       background: linear-gradient(145deg, #FFFFFF 0%, #F0FDF4 100%);
       border-color: rgba(16, 185, 129, 0.35);
-      box-shadow: 0 16px 40px rgba(16, 185, 129, 0.15);
     }
-
     .palm-aura-glow {
       position: absolute;
       width: 240px;
@@ -5115,7 +4784,6 @@
       pointer-events: none;
       z-index: 1;
     }
-
     .palm-svg-wrap {
       position: relative;
       z-index: 2;
@@ -5131,7 +4799,6 @@
       max-height: 280px;
       filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
     }
-
     .palm-badge-label {
       position: relative;
       z-index: 3;
@@ -5155,43 +4822,101 @@
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
     }
 
-    @media (max-width: 900px) {
-      .lifestyle-stage-header {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        text-align: center;
-      }
-      .lifestyle-intro-col {
-        align-items: center;
-        text-align: center;
-      }
-      .lifestyle-meta-pills {
-        justify-content: center;
-      }
-      .lifestyle-palm-showcase-card {
-        height: 320px;
-        max-width: 380px;
-        margin: 0 auto;
-        width: 100%;
-      }
-      .palm-svg-wrap {
-        height: 235px;
-      }
-      .palm-svg-wrap .botanical-svg {
-        max-height: 225px;
-      }
+    /* Gentle sway once the botanical art has drawn itself */
+    @keyframes palmSway {
+      0%, 100% { transform: rotate(-1.1deg); }
+      50% { transform: rotate(1.1deg); }
+    }
+    .botanical-scroll-art.is-drawn .botanical-svg {
+      animation: palmSway 6s ease-in-out infinite;
+      transform-origin: 50% 100%;
     }
 
-  </style>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dawod/thmanyah-font-web/index.css">
+    /* --- Morph deck centering (v9 defect: later Suffo state rules dropped -50%) --- */
+    .package-morph-card.is-center { transform: translate3d(-50%, 0, 0) scale(1) rotate(0deg); }
+    .package-morph-card.is-right { transform: translate3d(calc(-50% + 280px), 16px, 0) scale(0.92) rotate(4deg); }
+    .package-morph-card.is-left { transform: translate3d(calc(-50% - 280px), 16px, 0) scale(0.92) rotate(-4deg); }
+    .package-morph-card.is-far-right { transform: translate3d(calc(-50% + 210px), 32px, 0) scale(0.85) rotate(7deg); }
+    .package-morph-card.is-below { transform: translate3d(-50%, 60px, 0) scale(0.92) rotate(0deg); }
+
+    /* --- Anchor jumps must clear the fixed nav --- */
+    section, footer { scroll-margin-top: 112px; }
+
+    /* --- Directory rows: full data when scroll-activated (mobile) --- */
+    .suffo-dir-row.active .suffo-dir-col-desc { display: block; }
+    @media (max-width: 900px) {
+      .lifestyle-stage-header { grid-template-columns: 1fr; gap: 28px; text-align: center; }
+      .lifestyle-intro-col { align-items: center; text-align: center; }
+      .lifestyle-stage-header .section-head { text-align: center; }
+      .lifestyle-palm-showcase-card { height: 320px; }
+      .botanical-palm { width: 170px !important; bottom: -20px !important; right: -10px !important; opacity: 0.75 !important; }
+      .botanical-rose { width: 150px !important; bottom: -15px !important; left: -5px !important; opacity: 0.75 !important; }
+      /* the shared floating preview becomes a static strip above the table */
+      .suffo-dir-floating-preview {
+        position: static; width: 100%; height: 190px;
+        transform: none; opacity: 0; visibility: hidden;
+        margin-bottom: 12px; border-width: 3px;
+      }
+      .suffo-dir-floating-preview.is-active { opacity: 1; visibility: visible; transform: none; }
+      .suffo-dir-row.active .suffo-dir-col-desc { grid-column: 1 / -1; }
+      /* morph fan: tighter wings so the centre card is fully visible */
+      .package-morph-card.is-right { transform: translate3d(calc(-50% + 64px), 12px, 0) scale(0.92) rotate(2deg); }
+      .package-morph-card.is-left { transform: translate3d(calc(-50% - 64px), 12px, 0) scale(0.92) rotate(-2deg); }
+      .package-morph-card.is-far-right { transform: translate3d(calc(-50% + 110px), 22px, 0) scale(0.85) rotate(4deg); }
+      /* keep the facilities prev/next dock clear of the fixed WhatsApp pill:
+         the pill lifts while a sticky section with a bottom dock is on screen */
+      .floating-wa-pill { transition: transform var(--dur-fast) var(--ease-fluid), background-color var(--dur-fast) var(--ease-fluid), bottom 0.4s var(--ease-fluid); }
+      body.wa-lifted .floating-wa-pill { bottom: 104px; }
+      .lifestyle { position: relative; }
+    }
+    .lifestyle { position: relative; }
+
+    /* --- Metric cards: scroll activation looks like hover --- */
+    .suffo-metric-card.is-revealed { border-color: var(--gold-primary); }
+    .suffo-metric-card.is-scroll-active { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
+
+    /* --- Facility panel: scroll activation lifts its spec chips like hover --- */
+    .f-stage-panel.is-scroll-active .spec-dock-tag {
+      transform: translateY(-4px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 18px var(--gold-glow);
+    }
+
+    /* --- Real logo: compact ripple symbol (currentColor adapts to theme).
+           The slot was a 36px circle with object-fit:cover, which cropped the
+           wide horizontal lockup; the standalone symbol fits it. --- */
+    .nav-brand-img { width: 44px; height: 40px; object-fit: contain; border-radius: 0; border: none; color: var(--text-pure); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .botanical-scroll-art.is-drawn .botanical-svg { animation: none; }
+      .draw-path { transition: none; stroke-dashoffset: 0; }
+    }
+
+    </style>
 </head>
 <body>
+    <a class="skip-link" href="#booking">تخطَّ إلى الحجز مباشرة</a>
+    <a class="skip-link" href="#packages">تخطَّ إلى الباقات</a>
+    <!-- CINEMATIC INTRO (v9): CSS title sequence; the Remotion render (remotion/out/brand-reveal.mp4) plays here when present, otherwise the title sequence shows. -->
+    <div id="cinematic-intro" class="cinematic-intro" aria-hidden="true">
+      <video id="remotion-intro-video" class="cinematic-intro-video" muted playsinline autoplay preload="auto" poster="remotion/out/brand-reveal-poster.jpg">
+        <source src="remotion/out/brand-reveal.mp4" type="video/mp4">
+      </video>
+      <div class="cinematic-intro-title">
+        <span class="cinematic-intro-eyebrow">REST RESORT &amp; CHALET</span>
+        <span class="cinematic-intro-word">REST</span>
+        <span class="cinematic-intro-rule"></span>
+        <span class="cinematic-intro-ar">ريست — عالمك الخاص من السكينة</span>
+        <span class="cinematic-intro-en">YOUR PRIVATE TROPICAL ESCAPE</span>
+      </div>
+    </div>
+
 
   <!-- Top Scroll Progress Line -->
   <div class="top-scroll-line" id="top-scroll-line" aria-hidden="true"></div>
 
   <!-- Floating WhatsApp Pill Button -->
-  <a href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D8%B4%D8%A7%D9%84%D9%8A%D9%87%20%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%B9%20%D8%B1%D9%8A%D8%B3%D8%AA" target="_blank" rel="noopener noreferrer" class="floating-wa-pill" aria-label="تواصل واتساب فوري">
+  <a href="https://wa.me/966508332211?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D8%B4%D8%A7%D9%84%D9%8A%D9%87%20%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%B9%20%D8%B1%D9%8A%D8%B3%D8%AA" target="_blank" rel="noopener noreferrer" class="floating-wa-pill" aria-label="تواصل واتساب فوري">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
     <span>احجز الآن</span>
   </a>
@@ -5200,9 +4925,9 @@
   <div class="nav-holder">
     <nav class="nav-pill" id="nav-pill" aria-label="التنقل الرئيسي">
       <a href="#hero" class="nav-brand" aria-label="الرئيسية — شاليه ريست">
-        <img src="public/assets/real/brand_logo.webp" alt="شعار شاليه ومـنـتـجـع رِيـــــســـــت" class="nav-brand-img" decoding="async">
+        <img src="public/assets/brand/rest-symbol.svg" alt="شعار شاليه ومنتجع ريست" class="nav-brand-img" decoding="async">
         <div class="nav-brand-titles">
-          <span class="nav-brand-ar">شـالـيـه رِيـــــســـــت</span>
+          <span class="nav-brand-ar">شاليه رِيست</span>
           <span class="nav-brand-en">REST RESORT</span>
         </div>
       </a>
@@ -5210,7 +4935,9 @@
       <ul class="nav-menu">
         <li><a href="#hero" class="nav-menu-link">الرئيسية</a></li>
         <li><a href="#packages" class="nav-menu-link">الباقات والأسعار</a></li>
-        <li><a href="#facilities" class="nav-menu-link">أرجاء الشاليه</a></li>
+        <li><a href="#facilities" class="nav-menu-link">أرجاء الشاليه</a>
+              <li><a href="#lifestyle">أسلوب الحياة</a></li>
+              <li><a href="#resort-map">خريطة المنتجع</a></li></li>
         <li><a href="#guide" class="nav-menu-link">دليل الشاليه</a></li>
         <li><a href="#gallery" class="nav-menu-link">معرض الصور</a></li>
         <li><a href="#faq" class="nav-menu-link">الأسئلة الشائعة</a></li>
@@ -5249,9 +4976,9 @@
   <div class="mobile-nav-drawer" id="mobile-drawer" aria-hidden="true">
     <div class="drawer-top">
       <div class="nav-brand">
-        <img src="public/assets/real/brand_logo.webp" alt="شعار شاليه ريست" class="nav-brand-img" decoding="async">
+        <img src="public/assets/brand/rest-symbol.svg" alt="شعار شاليه ريست" class="nav-brand-img" decoding="async">
         <div class="nav-brand-titles">
-          <span class="nav-brand-ar">شـالـيـه رِيـــــســـــت</span>
+          <span class="nav-brand-ar">شاليه رِيست</span>
           <span class="nav-brand-en">REST RESORT</span>
         </div>
       </div>
@@ -5263,7 +4990,9 @@
     <ul class="drawer-links-list">
       <li><a href="#hero" class="drawer-link nav-dismiss">الرئيسية</a></li>
       <li><a href="#packages" class="drawer-link nav-dismiss">الباقات والأسعار</a></li>
-      <li><a href="#facilities" class="drawer-link nav-dismiss">أرجاء الشاليه</a></li>
+      <li><a href="#facilities" class="drawer-link nav-dismiss">أرجاء الشاليه</a>
+              <li><a href="#lifestyle">أسلوب الحياة</a></li>
+              <li><a href="#resort-map">خريطة المنتجع</a></li></li>
       <li><a href="#guide" class="drawer-link nav-dismiss">دليل المرافق والقواعد</a></li>
       <li><a href="#gallery" class="drawer-link nav-dismiss">المسرح السينمائي والمعرض</a></li>
       <li><a href="#faq" class="drawer-link nav-dismiss">الأسئلة الشائعة</a></li>
@@ -5297,16 +5026,84 @@
 
     <!-- ================= HERO SECTION ================= -->
         <!-- ================= FULL-SCREEN SCROLL-FLIPPING HERO (DUAL-SCENE ARCHITECTURE) ================= -->
-    <section class="hero-wrap" id="hero" aria-label="مقدمة شاليه ومـنـتـجـع رِيـــــســـــت">
+    <section class="hero-wrap" id="hero" aria-label="مقدمة شاليه ومنتجع ريست">
       <div class="hero-sticky-canvas" id="hero-sticky-canvas">
 
-        
+        <!-- Suffo 3D Watermark Typography -->
+        <div class="suffo-hero-watermark" aria-hidden="true">REST</div>
 
-        
+        <!-- Suffo 4-Corner Editorial Grid -->
+        <div class="suffo-hero-corners" aria-hidden="true">
+          <div class="suffo-corner-item">
+            <span class="suffo-coord-dot"></span>
+            <span>24.8607° N, 46.5417° E • متاح للحجز</span>
+          </div>
+          <div class="suffo-corner-item">
+            <span>© 2026 REST RESORT</span>
+          </div>
+          <div class="suffo-corner-item">
+            <span>الرياض // العمارية // الخصوصية المطلقة</span>
+          </div>
+        </div>
 
-        
+        <!-- Suffo Architectural Hotspot Pins & Glass Cards -->
+        <div class="suffo-hero-hotspots">
+          <!-- Spot 1: Pool & Cascades -->
+          <div class="suffo-hotspot" style="top: 60%; right: 28%;" data-spot="pool">
+            <div class="hotspot-ping-ring"></div>
+            <div class="hotspot-core-dot"></div>
+            <svg class="hotspot-leader-line" width="70" height="40" viewBox="0 0 70 40">
+              <line x1="0" y1="20" x2="45" y2="20" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-dasharray="2 2" />
+              <polyline points="45,20 65,35" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none" />
+            </svg>
+            <div class="hotspot-glass-card">
+              <div class="hotspot-card-header">
+                <span class="hotspot-badge">مرفق 01</span>
+                <span class="hotspot-status">تدفئة ذكية</span>
+              </div>
+              <h4 class="hotspot-title">المسبح البانورامي والشلال</h4>
+              <p class="hotspot-desc">12م × 5م • عمق متدرج • مساج مائي جاكوزي</p>
+            </div>
+          </div>
 
-        
+          <!-- Spot 2: Majlis -->
+          <div class="suffo-hotspot" style="top: 42%; right: 70%;" data-spot="majlis">
+            <div class="hotspot-ping-ring"></div>
+            <div class="hotspot-core-dot"></div>
+            <svg class="hotspot-leader-line" width="70" height="40" viewBox="0 0 70 40">
+              <line x1="0" y1="20" x2="45" y2="20" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-dasharray="2 2" />
+              <polyline points="45,20 65,5" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none" />
+            </svg>
+            <div class="hotspot-glass-card">
+              <div class="hotspot-card-header">
+                <span class="hotspot-badge">مرفق 02</span>
+                <span class="hotspot-status">إطلالة كاملة</span>
+              </div>
+              <h4 class="hotspot-title">مجلس الياقوت الملكي</h4>
+              <p class="hotspot-desc">إطلالة بانورامية • تكييف مركزي • شاشة 4K</p>
+            </div>
+          </div>
+
+          <!-- Spot 3: Firepit Sunken Terrace -->
+          <div class="suffo-hotspot" style="top: 76%; right: 74%;" data-spot="hikaya">
+            <div class="hotspot-ping-ring"></div>
+            <div class="hotspot-core-dot"></div>
+            <svg class="hotspot-leader-line" width="70" height="40" viewBox="0 0 70 40">
+              <line x1="0" y1="20" x2="45" y2="20" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-dasharray="2 2" />
+              <polyline points="45,20 65,30" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none" />
+            </svg>
+            <div class="hotspot-glass-card">
+              <div class="hotspot-card-header">
+                <span class="hotspot-badge">مرفق 03</span>
+                <span class="hotspot-status">سمر شتوي</span>
+              </div>
+              <h4 class="hotspot-title">جلسة حكاية وموقد النار</h4>
+              <p class="hotspot-desc">موقد حطب طبيعي • نظام صوتي • شواية متكاملة</p>
+            </div>
+          </div>
+        </div>
+
+
         <!-- Scene 1: Luxury Resort Pool & Daylight Serenity -->
         <div class="hero-scene is-active" id="hero-scene-1">
           <div class="hero-media-wrap">
@@ -5322,21 +5119,21 @@
               <div class="reveal-box" style="margin-bottom: var(--sp-150);">
                 <span class="luxury-pill">
                   <span class="indicator-dot"></span>
-                  واحَــــةُ الـخـصـوصـيـة الـمُـطـلـقـة والـسَّـكِـيـنـة
+                  واحة الخصوصية المطلقة والسكينة
                 </span>
               </div>
 
-              <h1 class="h-hero hero-heading reveal-box delay-1" style="line-height: 1.3; margin-bottom: var(--sp-200);">
+              <h1 class="h-hero hero-heading reveal-box delay-1">
                 عـالـمُـك الـخـاص مِـن الـسَّـكِـيـنـةِ والـرَّفـاهِـيَـــة
               </h1>
 
-              <p class="hero-desc reveal-box delay-2" style="line-height: 1.85; margin-bottom: var(--sp-300); max-width: 620px;">
-                مـسـبـحٌ دافـئ بـشـلالٍ مـتـدفـق، خـصـوصـيـةٌ عـائـلـيـة تـامـة، ولـحـظـاتٌ هـادئـة لا تُـنـسـى.
+              <p class="hero-desc reveal-box delay-2">
+                مسبح دافئ بشلال متدفق، خصوصية عائلية تامة، ولحظات هادئة لا تُنسى.
               </p>
 
               <div class="hero-ctas-row reveal-box delay-3">
                 <a href="#booking" class="btn btn-lg btn-gold">
-                  <span>احـجِـز إقـامَـتـك الآن</span>
+                  <span>احجز إقامتك الآن</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
 
@@ -5363,7 +5160,7 @@
               <div style="margin-bottom: var(--sp-150);">
                 <span class="luxury-pill">
                   <span class="indicator-dot"></span>
-                  أجـواءُ الـمـسـاء والاســتـجـمـام الاســتـثـنـائـي
+                  أجواء المساء والاستجمام الاستثنائي
                 </span>
               </div>
 
@@ -5412,16 +5209,6 @@
     </section>
 
     <!-- ================= UNDER-COVER SHEET: CONTINUOUS LUXURY MARQUEE CAROUSEL ================= -->
-    
-    <!-- Vibrant Hawaiian Coastal Lagoon Wave Ribbon (Remotion Animated Swell) -->
-    <div class="hawaii-wave-container" aria-hidden="true">
-      <svg class="hawaii-wave-svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
-        <path class="wave-path-back" d="M0,32 C240,64 480,10 720,40 C960,70 1200,25 1440,45 L1440,90 L0,90 Z"></path>
-        <path class="wave-path-mid" d="M0,45 C320,15 640,65 960,35 C1200,55 1320,20 1440,50 L1440,90 L0,90 Z"></path>
-        <path class="wave-path-front" d="M0,60 C280,30 560,75 840,45 C1120,68 1300,38 1440,62 L1440,90 L0,90 Z"></path>
-      </svg>
-    </div>
-
     <div class="undercover-sheet-layer" id="undercover-sheet">
       <div class="hero-marquee-band" aria-label="مزايا شاليه ريست">
         <div class="marquee-track">
@@ -5490,7 +5277,7 @@
             <span class="suffo-section-marker"><span>•</span> REST PACKAGES</span>
             
             <h2 id="pkg-title" class="suffo-editorial-title">
-              هـل تـبـحـث عـن مَـــــــلاذٍ<span class="suffo-dash">-</span><br>اســتـثـنـائـي؟
+              هل تبحث عن مـلاذ<span class="suffo-dash">-</span><br>استثنائي؟
             </h2>
 
             <div class="suffo-search-pill-box">
@@ -5590,10 +5377,10 @@
               </div>
               <div class="suffo-card-bottom-row">
                 <div class="suffo-price-block">
-                  <span class="suffo-price-num">100,000</span>
+                  <span class="suffo-price-num">250,000</span>
                   <span class="suffo-price-curr">ريال يمني / للفترة</span>
                 </div>
-                <button type="button" class="suffo-card-plus-btn trigger-pick-pkg" data-pkg-val="moment" data-pkg-title="REST MOMENT — ريست مومنت (100,000 ريال)" data-pkg-cost="100000" aria-label="حجز باقة ريست مومنت">
+                <button type="button" class="suffo-card-plus-btn trigger-pick-pkg" data-pkg-val="moment" data-pkg-title="REST MOMENT — ريست مومنت (250,000 ريال)" data-pkg-cost="250000" aria-label="حجز باقة ريست مومنت">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
                 </button>
               </div>
@@ -5611,7 +5398,7 @@
                 <div class="suffo-card-specs-row">
                   <div class="suffo-card-spec-chip">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    <span>11:00 ص — 04:00 م</span>
+                    <span>12:00 ظ — 12:00 منتصف الليل</span>
                   </div>
                   <div class="suffo-card-spec-chip">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
@@ -5621,10 +5408,10 @@
               </div>
               <div class="suffo-card-bottom-row">
                 <div class="suffo-price-block">
-                  <span class="suffo-price-num">90,000</span>
+                  <span class="suffo-price-num">70,000</span>
                   <span class="suffo-price-curr">ريال يمني / للفترة</span>
                 </div>
-                <button type="button" class="suffo-card-plus-btn trigger-pick-pkg" data-pkg-val="business" data-pkg-title="غداء الأعمال — Business Lunch (90,000 ريال)" data-pkg-cost="90000" aria-label="حجز باقة غداء الأعمال">
+                <button type="button" class="suffo-card-plus-btn trigger-pick-pkg" data-pkg-val="business-full" data-pkg-title="غداء الأعمال — اليوم الكامل (70,000 ريال)" data-pkg-cost="70000" aria-label="حجز باقة غداء الأعمال">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
                 </button>
               </div>
@@ -5633,53 +5420,21 @@
           </div>
         </div>
       </div>
-
-    <!-- Botanical Red Rose Luxury Scroll Art (Draws itself on scroll) -->
-    <div class="botanical-scroll-art botanical-rose" id="botanical-rose-art" aria-hidden="true">
-      <svg viewBox="0 0 300 450" fill="none" class="botanical-svg" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="roseRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#FB7185" />
-            <stop offset="35%" stop-color="#F43F5E" />
-            <stop offset="70%" stop-color="#E11D48" />
-            <stop offset="100%" stop-color="#9F1239" />
-          </linearGradient>
-          <linearGradient id="stemGreenGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#064E3B" />
-            <stop offset="100%" stop-color="#059669" />
-          </linearGradient>
-        </defs>
-        <!-- Stem with Thorns -->
-        <path class="draw-path rose-stem" d="M150,440 C145,360 160,280 148,200 C145,180 152,160 150,140" stroke="url(#stemGreenGrad)" stroke-width="4.5" stroke-linecap="round" />
-        <path class="draw-path rose-thorn" d="M149,380 Q135,372 132,365 Q145,372 151,375" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-        <path class="draw-path rose-thorn" d="M152,300 Q168,295 172,288 Q158,295 150,297" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-        <path class="draw-path rose-thorn" d="M148,240 Q136,233 133,227 Q144,233 150,236" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-
-        <!-- Leaves -->
-        <path class="draw-path rose-leaf" d="M148,340 C110,335 75,350 55,380 C75,395 115,380 148,345" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-        <path class="draw-path rose-leaf-vein" d="M148,345 C115,360 85,372 55,380 M120,352 L115,368 M95,362 L90,378" stroke="url(#stemGreenGrad)" stroke-width="1.5" stroke-linecap="round" />
-        
-        <path class="draw-path rose-leaf" d="M150,260 C185,250 220,265 240,290 C220,310 180,295 149,265" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-        <path class="draw-path rose-leaf-vein" d="M149,265 C180,275 210,285 240,290 M180,272 L185,285 M205,280 L210,292" stroke="url(#stemGreenGrad)" stroke-width="1.5" stroke-linecap="round" />
-
-        <!-- Sepals -->
-        <path class="draw-path rose-sepal" d="M140,150 C130,165 115,175 105,180 C120,165 135,152 142,142" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-        <path class="draw-path rose-sepal" d="M160,150 C170,165 185,175 195,180 C180,165 165,152 158,142" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
-
-        <!-- Red Rose Blooming Petals -->
-        <path class="draw-path rose-petal" d="M120,140 C80,120 70,70 110,40 C140,55 145,95 130,135" stroke="url(#roseRedGrad)" stroke-width="3.2" stroke-linecap="round" />
-        <path class="draw-path rose-petal" d="M180,140 C220,120 230,70 190,40 C160,55 155,95 170,135" stroke="url(#roseRedGrad)" stroke-width="3.2" stroke-linecap="round" />
-        <path class="draw-path rose-petal" d="M110,40 C135,15 165,15 190,40 C170,55 130,55 110,40" stroke="url(#roseRedGrad)" stroke-width="3" stroke-linecap="round" />
-
-        <path class="draw-path rose-petal" d="M130,135 C105,110 100,75 125,55 C145,70 148,105 138,130" stroke="url(#roseRedGrad)" stroke-width="2.8" stroke-linecap="round" />
-        <path class="draw-path rose-petal" d="M170,135 C195,110 200,75 175,55 C155,70 152,105 162,130" stroke="url(#roseRedGrad)" stroke-width="2.8" stroke-linecap="round" />
-        <path class="draw-path rose-petal" d="M125,55 C140,38 160,38 175,55 C160,65 140,65 125,55" stroke="url(#roseRedGrad)" stroke-width="2.6" stroke-linecap="round" />
-
-        <path class="draw-path rose-petal" d="M140,115 C130,95 130,75 145,65 C160,75 160,95 150,115 C144,115 142,105 146,95 C152,90 155,80 148,75 C142,78 140,88 145,95" stroke="url(#roseRedGrad)" stroke-width="2.4" stroke-linecap="round" />
-      </svg>
-    </div>
-
-    </section>
+    
+          <!-- Package comparison (v9): every bookable option, prices/times from the booking calculator -->
+          <div class="pkg-compare reveal-box" role="region" aria-label="مقارنة الباقات">
+            <table>
+              <thead><tr><th scope="col">الباقة</th><th scope="col">الوقت</th><th scope="col">السعة</th><th scope="col">السعر (ريال يمني)</th></tr></thead>
+              <tbody>
+                <tr><td>REST DAY — ريست دي</td><td>09:00 ص — 09:00 م</td><td>حتى 40 شخصاً</td><td class="pkg-price">180,000</td></tr>
+                <tr><td>REST NIGHT — ريست نايت</td><td>11:00 م — 07:00 ص</td><td>حتى 50 شخصاً</td><td class="pkg-price">130,000</td></tr>
+                <tr><td>REST MOMENT — ريست مومنت</td><td>04:00 م — 10:00 م</td><td>حتى 30 شخصاً</td><td class="pkg-price">250,000</td></tr>
+                <tr><td>غداء أعمال — الفترة الممتدة</td><td>12:00 ظ — 09:00 م</td><td>—</td><td class="pkg-price">50,000</td></tr>
+                <tr><td>غداء أعمال — اليوم الكامل</td><td>12:00 ظ — 12:00 منتصف الليل</td><td>حتى 25 شخصاً</td><td class="pkg-price">70,000</td></tr>
+              </tbody>
+            </table>
+          </div>
+</section>
 
     <!-- ================= FACILITIES REALMS ================= -->
         <!-- ================= FACILITIES REALMS (SCROLL-DRIVEN ARCHITECTURAL STAGE) ================= -->
@@ -5692,7 +5447,7 @@
             <div class="facilities-header-row">
               <div class="facilities-titles">
                 <span class="eyebrow">أرجاء ومرافق شاليه ريست</span>
-                <h2 id="f-heading" class="h-section" style="color: var(--text-pure); margin-bottom: 2px;">عـمـارةٌ مـسـتـوحـاةٌ مِـن تـفـاصِـيـــل الـسَّـكِـيـنـة</h2>
+                <h2 id="f-heading" class="h-section" style="color: var(--text-pure); margin-bottom: 2px;">عـمـارة مـسـتـوحـاة من تفاصيل السكينة</h2>
               </div>
               
               <!-- Live Realm Counter Badge -->
@@ -5933,12 +5688,152 @@
     </section>
 
     <!-- Suffo Metric Lookbook Cards Strip & Live Spec Ticker (Frame 24-30 Inspiration) -->
-    <section class="suffo-facilities-section" id="suffo-facilities" aria-label="شريط مواصفات مرافق ريست">
+    
+    <hr class="tropical-band" aria-hidden="true">
+    <!-- ================= TROPICAL LIFESTYLE (v9, new) ================= -->
+    <section class="lifestyle" id="lifestyle" aria-labelledby="lifestyle-head">
+      <div class="container">
+        <div class="lifestyle-stage-header">
+          <div class="lifestyle-intro-col section-head reveal-box">
+            <span class="eyebrow">TROPICAL LIFESTYLE — أسلوب الحياة الاستوائية</span>
+            <h2 id="lifestyle-head">لـحـظـات لا تُقاس بالساعات</h2>
+            <p class="section-head-body">ريست ليس مكاناً تقضي فيه وقتك، بل إيقاعٌ تعيشه: ماءٌ دافئ، ونارٌ هادئة، وخضرةٌ تظلّلك — كل لحظة فيه من مرافق المكان نفسه، لا من صورٍ مستعارة.</p>
+          </div>
+          <div class="lifestyle-palm-showcase-card reveal-box delay-1 botanical-scroll-art" id="botanical-palm-art">
+            <div class="palm-aura-glow" aria-hidden="true"></div>
+            <div class="palm-svg-wrap">
+              <svg viewBox="0 0 320 480" fill="none" class="botanical-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="palmStrokeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#059669" />
+                    <stop offset="50%" stop-color="#10B981" />
+                    <stop offset="100%" stop-color="#34D399" />
+                  </linearGradient>
+                  <linearGradient id="trunkGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#064E3B" />
+                    <stop offset="100%" stop-color="#10B981" />
+                  </linearGradient>
+                </defs>
+                <!-- Trunk -->
+                <path class="draw-path trunk-path" d="M155,470 C153,380 156,290 160,200 C162,180 160,160 160,150" stroke="url(#trunkGrad)" stroke-width="6.5" stroke-linecap="round" />
+                <path class="draw-path trunk-ring" d="M148,420 Q155,415 162,420" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
+                <path class="draw-path trunk-ring" d="M150,370 Q156,365 163,370" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
+                <path class="draw-path trunk-ring" d="M152,320 Q157,315 164,320" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
+                <path class="draw-path trunk-ring" d="M154,270 Q158,265 165,270" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
+                <path class="draw-path trunk-ring" d="M156,220 Q160,215 166,220" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
+                
+                <!-- Fronds -->
+                <path class="draw-path leaf-path" d="M160,150 C140,110 100,80 40,85 C70,105 105,120 150,145" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M60,86 L45,105 M80,88 L70,112 M100,95 L95,122 M120,105 L118,132 M138,120 L138,140" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
+                
+                <path class="draw-path leaf-path" d="M160,150 C135,90 90,40 20,45 C50,70 95,95 150,140" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M40,50 L25,72 M65,58 L55,85 M90,68 L85,98 M115,82 L112,112 M135,105 L135,128" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
+                
+                <path class="draw-path leaf-path" d="M160,150 C160,70 155,20 160,10 C165,40 170,80 165,145" stroke="url(#palmStrokeGrad)" stroke-width="4" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M158,25 L140,35 M162,25 L180,35 M157,50 L135,62 M163,50 L185,62 M156,80 L130,95 M164,80 L190,95 M157,110 L135,125 M163,110 L188,125" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
+                
+                <path class="draw-path leaf-path" d="M160,150 C185,90 230,40 300,45 C270,70 225,95 170,140" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M280,50 L295,72 M255,58 L265,85 M230,68 L235,98 M205,82 L208,112 M185,105 L185,128" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
+
+                <path class="draw-path leaf-path" d="M160,150 C180,110 220,80 280,85 C250,105 215,120 170,145" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M260,86 L275,105 M240,88 L250,112 M220,95 L225,122 M200,105 L202,132 M182,120 L182,140" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
+
+                <path class="draw-path leaf-path" d="M160,150 C120,155 70,170 10,210 C50,195 100,180 155,160" stroke="url(#palmStrokeGrad)" stroke-width="2.8" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M30,205 L20,225 M60,190 L50,212 M90,178 L85,200 M120,168 L115,188" stroke="url(#palmStrokeGrad)" stroke-width="2" stroke-linecap="round" />
+
+                <path class="draw-path leaf-path" d="M160,150 C200,155 250,170 310,210 C270,195 220,180 165,160" stroke="url(#palmStrokeGrad)" stroke-width="2.8" stroke-linecap="round" />
+                <path class="draw-path pinna-path" d="M290,205 L300,225 M260,190 L270,212 M230,178 L235,200 M200,168 L205,188" stroke="url(#palmStrokeGrad)" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="palm-badge-label">
+              <span class="palm-icon-leaf">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </span>
+              <span>نـخـلـةُ الـواحَــــة الاســتـوائـيـة</span>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="lifestyle-grid">
+          <div class="lifestyle-moments">
+            <article class="lifestyle-moment reveal-box">
+              <img src="public/assets/real/pool_waterfall_fountain.webp" alt="المسبح الدافئ والشلال في ريست" loading="lazy" decoding="async">
+              <div class="lifestyle-moment-body">
+                <h3>بجانب الماء</h3>
+                <p>مسبح دافئ بشلال متدفق ومساج مائي — صباحٌ يبدأ بصوت الماء، وينتهي بسكينة لا تشبه سواها.</p>
+              </div>
+            </article>
+            <article class="lifestyle-moment reveal-box">
+              <img src="public/assets/real/hikaya_firepit_detail.webp" alt="موقد النار في جلسة حكاية" loading="lazy" decoding="async">
+              <div class="lifestyle-moment-body">
+                <h3>سمر العائلة</h3>
+                <p>جلسة حكاية بموقد حطب طبيعي — حيث تجتمع العائلة حول النار، وتُروى الحكايات تحت زهور الكرز المضيئة.</p>
+              </div>
+            </article>
+            <article class="lifestyle-moment reveal-box">
+              <img src="public/assets/real/bustan_stone_terrace.webp" alt="جلسة البستان في ريست" loading="lazy" decoding="async">
+              <div class="lifestyle-moment-body">
+                <h3>تحت المظلة الخضراء</h3>
+                <p>جلسة بستان بمظلة ريفية ورذاذ ماء منعش — ظلٌّ أخضر وطعامٌ خارجي على مهل، كما يجب أن تكون العطلة.</p>
+              </div>
+            </article>
+          </div>
+          <figure class="lifestyle-wide reveal-box">
+            <img src="public/assets/real/courtyard_panoramic_canopy.webp" alt="إطلالة بانورامية على فناء ريست" loading="lazy" decoding="async">
+            <figcaption>الرياض // العمارية // الخصوصية المطلقة</figcaption>
+          </figure>
+    <div class="botanical-scroll-art botanical-rose" id="botanical-rose-art" aria-hidden="true">
+      <svg viewBox="0 0 300 450" fill="none" class="botanical-svg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="roseRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FB7185" />
+            <stop offset="35%" stop-color="#F43F5E" />
+            <stop offset="70%" stop-color="#E11D48" />
+            <stop offset="100%" stop-color="#9F1239" />
+          </linearGradient>
+          <linearGradient id="stemGreenGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#064E3B" />
+            <stop offset="100%" stop-color="#059669" />
+          </linearGradient>
+        </defs>
+        <!-- Stem with Thorns -->
+        <path class="draw-path rose-stem" d="M150,440 C145,360 160,280 148,200 C145,180 152,160 150,140" stroke="url(#stemGreenGrad)" stroke-width="4.5" stroke-linecap="round" />
+        <path class="draw-path rose-thorn" d="M149,380 Q135,372 132,365 Q145,372 151,375" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <path class="draw-path rose-thorn" d="M152,300 Q168,295 172,288 Q158,295 150,297" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <path class="draw-path rose-thorn" d="M148,240 Q136,233 133,227 Q144,233 150,236" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+
+        <!-- Leaves -->
+        <path class="draw-path rose-leaf" d="M148,340 C110,335 75,350 55,380 C75,395 115,380 148,345" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <path class="draw-path rose-leaf-vein" d="M148,345 C115,360 85,372 55,380 M120,352 L115,368 M95,362 L90,378" stroke="url(#stemGreenGrad)" stroke-width="1.5" stroke-linecap="round" />
+        
+        <path class="draw-path rose-leaf" d="M150,260 C185,250 220,265 240,290 C220,310 180,295 149,265" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <path class="draw-path rose-leaf-vein" d="M149,265 C180,275 210,285 240,290 M180,272 L185,285 M205,280 L210,292" stroke="url(#stemGreenGrad)" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- Sepals -->
+        <path class="draw-path rose-sepal" d="M140,150 C130,165 115,175 105,180 C120,165 135,152 142,142" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+        <path class="draw-path rose-sepal" d="M160,150 C170,165 185,175 195,180 C180,165 165,152 158,142" stroke="url(#stemGreenGrad)" stroke-width="2.5" stroke-linecap="round" />
+
+        <!-- Red Rose Blooming Petals -->
+        <path class="draw-path rose-petal" d="M120,140 C80,120 70,70 110,40 C140,55 145,95 130,135" stroke="url(#roseRedGrad)" stroke-width="3.2" stroke-linecap="round" />
+        <path class="draw-path rose-petal" d="M180,140 C220,120 230,70 190,40 C160,55 155,95 170,135" stroke="url(#roseRedGrad)" stroke-width="3.2" stroke-linecap="round" />
+        <path class="draw-path rose-petal" d="M110,40 C135,15 165,15 190,40 C170,55 130,55 110,40" stroke="url(#roseRedGrad)" stroke-width="3" stroke-linecap="round" />
+
+        <path class="draw-path rose-petal" d="M130,135 C105,110 100,75 125,55 C145,70 148,105 138,130" stroke="url(#roseRedGrad)" stroke-width="2.8" stroke-linecap="round" />
+        <path class="draw-path rose-petal" d="M170,135 C195,110 200,75 175,55 C155,70 152,105 162,130" stroke="url(#roseRedGrad)" stroke-width="2.8" stroke-linecap="round" />
+        <path class="draw-path rose-petal" d="M125,55 C140,38 160,38 175,55 C160,65 140,65 125,55" stroke="url(#roseRedGrad)" stroke-width="2.6" stroke-linecap="round" />
+
+        <path class="draw-path rose-petal" d="M140,115 C130,95 130,75 145,65 C160,75 160,95 150,115 C144,115 142,105 146,95 C152,90 155,80 148,75 C142,78 140,88 145,95" stroke="url(#roseRedGrad)" stroke-width="2.4" stroke-linecap="round" />
+      </svg>
+        </div>
+      </div>
+    </section>
+<section class="suffo-facilities-section" id="suffo-facilities" aria-label="شريط مواصفات مرافق ريست">
       <div class="container">
         
         <div class="suffo-strip-header">
           <span class="suffo-section-marker"><span>•</span> ARCHITECTURAL SPECIFICATIONS</span>
-          <h2 class="h-section" style="color: var(--text-pure); margin-bottom: 8px;">مواصفات ومساحات مرافق ريست</h2>
+          <h2 class="h-section" style="color: var(--text-pure); margin-bottom: 8px;">مـواصـفـات ومساحات مرافق ريست</h2>
           <p class="text-caption">مرر المؤشر فوق أي بطاقة لاستعراض الصورة الحية للمرفق وتفاصيل مساحته</p>
         </div>
 
@@ -6104,7 +5999,7 @@
         <div class="suffo-dir-header">
           <div class="suffo-dir-title-wrap">
             <h2 class="suffo-dir-main-title">
-              أرجاء الملاذ<br>
+              أرجـاء الـمـلاذ<br>
               <span class="suffo-dash">-</span>بين يديك.
             </h2>
           </div>
@@ -6176,170 +6071,41 @@
 
     <!-- ================= CHALET DIRECTORY & GUIDE (5 TABS) ================= -->
     
-    <!-- PHASE 8: TROPICAL LIFESTYLE SECTION (Editorial Storytelling & Resort Atmosphere) -->
-    <!-- PHASE 8: TROPICAL LIFESTYLE SECTION (Editorial Storytelling & Dedicated Palm Showcase) -->
-    <section class="tropical-lifestyle-section" id="tropical-lifestyle" aria-labelledby="lifestyle-head">
-      <div class="container lifestyle-container">
-        
-        <!-- Grand Tropical Resort Stage Header (Dedicated Palm Showcase + Story Headline) -->
-        <div class="lifestyle-stage-header">
-          
-          <!-- Right Column: Editorial Headline & Resort Narrative -->
-          <div class="lifestyle-intro-col reveal-box">
-            <span class="luxury-pill" style="margin-bottom: var(--sp-150);">
-              <span class="indicator-dot"></span>
-              تـجـربـة الاسـتـرخـاء والـضـيـافـة • TROPICAL LIFESTYLE
-            </span>
-            <h2 id="lifestyle-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-150);">
-              لـحـظـاتٌ تـعـيـشُـهـا بـكـامِـلِ حـواسِّـك
-            </h2>
-            <p class="text-body" style="line-height: 1.85; margin-bottom: var(--sp-250); max-width: 620px;">
-              بين هدوء المياه الدافئة وسحر السمر تحت أشجار الكرز المضيئة، صُممت كل زاوية في رِيست لتمنحك ملاذاً يجمع الخصوصية المطلقة بالحيوية والرفاهية الاستوائية.
-            </p>
-
-            <!-- Resort Highlights Pills -->
-            <div class="lifestyle-meta-pills">
-              <span class="lifestyle-meta-chip">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                خصوصية عائلية تامة
-              </span>
-              <span class="lifestyle-meta-chip">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                مسطحات خضراء ونخيل
-              </span>
-              <span class="lifestyle-meta-chip">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/></svg>
-                شلالات مائية دافئة
-              </span>
-            </div>
+    <hr class="tropical-band" aria-hidden="true">
+    <!-- ================= INTERACTIVE RESORT MAP (v9, new — illustrative, non-geographic) ================= -->
+    <section class="resort-map" id="resort-map" aria-labelledby="resort-map-head">
+      <div class="container">
+        <div class="section-head reveal-box">
+          <span class="eyebrow">RESORT MAP — خريطة المنتجع</span>
+          <h2 id="resort-map-head">أرجـاء ريست في نظرة واحدة</h2>
+          <p class="section-head-body">اضغط على أي علامة لتتعرّف على المرفق ومساحته. هذا رسمٌ إرشادي توضيحي لترتيب المرافق وليس مخططاً هندسياً، والمساحات منقولة من دليل المرافق في الموقع نفسه.</p>
+        </div>
+        <div class="map-shell reveal-box">
+          <div class="map-canvas" role="group" aria-label="رسم توضيحي لأرجاء المنتجع">
+            <div class="map-water" aria-hidden="true">المسبح والشلال</div>
+            <button type="button" class="map-marker" style="top: 18%; inset-inline-start: 30%;" data-map="pool" aria-pressed="true"><span class="pin"><span>01</span></span><span class="pin-label">المسبح والشلال</span></button>
+            <button type="button" class="map-marker" style="top: 14%; inset-inline-start: 68%;" data-map="majlis" aria-pressed="false"><span class="pin"><span>02</span></span><span class="pin-label">مجلس الياقوت</span></button>
+            <button type="button" class="map-marker" style="top: 58%; inset-inline-start: 62%;" data-map="hikaya" aria-pressed="false"><span class="pin"><span>03</span></span><span class="pin-label">جلسة حكاية</span></button>
+            <button type="button" class="map-marker" style="top: 66%; inset-inline-start: 18%;" data-map="bustan" aria-pressed="false"><span class="pin"><span>04</span></span><span class="pin-label">جلسة البستان</span></button>
+            <button type="button" class="map-marker" style="top: 40%; inset-inline-start: 84%;" data-map="cabin" aria-pressed="false"><span class="pin"><span>05</span></span><span class="pin-label">الكوخ الأبيض</span></button>
+            <button type="button" class="map-marker" style="top: 82%; inset-inline-start: 46%;" data-map="playground" aria-pressed="false"><span class="pin"><span>06</span></span><span class="pin-label">الملاعب والحديقة</span></button>
           </div>
-
-          <!-- Left Column: THE MAJESTIC BOTANICAL PALM TREE (Proud, Tall & 100% Clear) -->
-          <div class="lifestyle-palm-showcase-card reveal-box delay-1 botanical-scroll-art" id="botanical-palm-art">
-            <div class="palm-aura-glow" aria-hidden="true"></div>
-            <div class="palm-svg-wrap">
-              <svg viewBox="0 0 320 480" fill="none" class="botanical-svg" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="palmStrokeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#059669" />
-                    <stop offset="50%" stop-color="#10B981" />
-                    <stop offset="100%" stop-color="#34D399" />
-                  </linearGradient>
-                  <linearGradient id="trunkGrad" x1="0%" y1="100%" x2="0%" y2="0%">
-                    <stop offset="0%" stop-color="#064E3B" />
-                    <stop offset="100%" stop-color="#10B981" />
-                  </linearGradient>
-                </defs>
-                <!-- Trunk -->
-                <path class="draw-path trunk-path" d="M155,470 C153,380 156,290 160,200 C162,180 160,160 160,150" stroke="url(#trunkGrad)" stroke-width="6.5" stroke-linecap="round" />
-                <path class="draw-path trunk-ring" d="M148,420 Q155,415 162,420" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
-                <path class="draw-path trunk-ring" d="M150,370 Q156,365 163,370" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
-                <path class="draw-path trunk-ring" d="M152,320 Q157,315 164,320" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
-                <path class="draw-path trunk-ring" d="M154,270 Q158,265 165,270" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
-                <path class="draw-path trunk-ring" d="M156,220 Q160,215 166,220" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round" />
-                
-                <!-- Fronds -->
-                <path class="draw-path leaf-path" d="M160,150 C140,110 100,80 40,85 C70,105 105,120 150,145" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M60,86 L45,105 M80,88 L70,112 M100,95 L95,122 M120,105 L118,132 M138,120 L138,140" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
-                
-                <path class="draw-path leaf-path" d="M160,150 C135,90 90,40 20,45 C50,70 95,95 150,140" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M40,50 L25,72 M65,58 L55,85 M90,68 L85,98 M115,82 L112,112 M135,105 L135,128" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
-                
-                <path class="draw-path leaf-path" d="M160,150 C160,70 155,20 160,10 C165,40 170,80 165,145" stroke="url(#palmStrokeGrad)" stroke-width="4" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M158,25 L140,35 M162,25 L180,35 M157,50 L135,62 M163,50 L185,62 M156,80 L130,95 M164,80 L190,95 M157,110 L135,125 M163,110 L188,125" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
-                
-                <path class="draw-path leaf-path" d="M160,150 C185,90 230,40 300,45 C270,70 225,95 170,140" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M280,50 L295,72 M255,58 L265,85 M230,68 L235,98 M205,82 L208,112 M185,105 L185,128" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
-
-                <path class="draw-path leaf-path" d="M160,150 C180,110 220,80 280,85 C250,105 215,120 170,145" stroke="url(#palmStrokeGrad)" stroke-width="3.5" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M260,86 L275,105 M240,88 L250,112 M220,95 L225,122 M200,105 L202,132 M182,120 L182,140" stroke="url(#palmStrokeGrad)" stroke-width="2.2" stroke-linecap="round" />
-
-                <path class="draw-path leaf-path" d="M160,150 C120,155 70,170 10,210 C50,195 100,180 155,160" stroke="url(#palmStrokeGrad)" stroke-width="2.8" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M30,205 L20,225 M60,190 L50,212 M90,178 L85,200 M120,168 L115,188" stroke="url(#palmStrokeGrad)" stroke-width="2" stroke-linecap="round" />
-
-                <path class="draw-path leaf-path" d="M160,150 C200,155 250,170 310,210 C270,195 220,180 165,160" stroke="url(#palmStrokeGrad)" stroke-width="2.8" stroke-linecap="round" />
-                <path class="draw-path pinna-path" d="M290,205 L300,225 M260,190 L270,212 M230,178 L235,200 M200,168 L205,188" stroke="url(#palmStrokeGrad)" stroke-width="2" stroke-linecap="round" />
-              </svg>
-            </div>
-            <div class="palm-badge-label">
-              <span class="palm-icon-leaf">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-              </span>
-              <span>نـخـلـةُ الـواحَــــة الاســتـوائـيـة</span>
-            </div>
+          <div class="map-panel" id="map-panel" aria-live="polite">
+            <img id="map-panel-img" src="public/assets/real/pool_waterfall_fountain.webp" alt="المسبح الداخلي والشلال">
+            <h3 id="map-panel-name">المسبح الداخلي والشلال</h3>
+            <p id="map-panel-desc">عمق متدرج، تدفئة مياه ذكية، شلال جداري انسيابي ونوافير قوسية</p>
+            <span class="map-area" id="map-panel-area">المساحة: 120 م²</span>
+            <a class="btn btn-lg btn-whatsapp" href="#booking" style="justify-content: center;">احجز هذا المرفق ضمن إقامتك</a>
           </div>
         </div>
-
-        <!-- 3 Large Editorial Story Cards with Real Assets (Positioned BELOW the palm tree) -->
-        <div class="lifestyle-stories-grid">
-          
-          <!-- Story 1: Poolside Serenity -->
-          <article class="lifestyle-card reveal-box delay-1 remotion-spring-hover">
-            <div class="lifestyle-card-visual">
-              <img src="public/assets/real/pool_waterfall_fountain.webp" alt="الاسترخاء بجانب المياه الفيروزية" loading="lazy" decoding="async">
-              <div class="lifestyle-visual-tint"></div>
-              <span class="lifestyle-chip">01 • مِـيـاه وفـيـروز</span>
-            </div>
-            <div class="lifestyle-card-body">
-              <h3 class="lifestyle-card-title">انـسـيـابُ الـمِـيـاه والـسَّـكِـيـنـة</h3>
-              <p class="lifestyle-card-text">
-                مسبح عائلي دافئ مغلق بالكامل، شلال جداري يتدفق بصوتٍ مهدئ للأعصاب، ونوافير قوسية مضيئة تضفي سحراً استثنائياً لكل لحظة.
-              </p>
-              <div class="lifestyle-card-footer">
-                <span class="lifestyle-metric-tag">عمق متدرج • تدفئة 34°م</span>
-                <a href="#facilities" class="lifestyle-read-link">استكشف المرفق ←</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Story 2: Sunken Firepit Evenings -->
-          <article class="lifestyle-card reveal-box delay-2 remotion-spring-hover">
-            <div class="lifestyle-card-visual">
-              <img src="public/assets/real/hikaya_sunken_lounge.webp" alt="أمسيات السمر الدافئة تحت النجوم" loading="lazy" decoding="async">
-              <div class="lifestyle-visual-tint"></div>
-              <span class="lifestyle-chip">02 • سَـمَـر ونـجـوم</span>
-            </div>
-            <div class="lifestyle-card-body">
-              <h3 class="lifestyle-card-title">جـلـسـةُ حـكـايـة ومـوقِـدُ الـنـار</h3>
-              <p class="lifestyle-card-text">
-                جلسة دائرية حجرية غائرة في الأرض تتوسطها حفرة نار طبيعية تحت زهور الكرز المتألقة، لسمر عائلي دافئ ولحظات حديث لا تنتهي.
-              </p>
-              <div class="lifestyle-card-footer">
-                <span class="lifestyle-metric-tag">موقد حطب • سعة 16 شخصاً</span>
-                <a href="#facilities" class="lifestyle-read-link">استكشف الجلسة ←</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Story 3: Royal Majlis Hospitality -->
-          <article class="lifestyle-card reveal-box delay-3 remotion-spring-hover">
-            <div class="lifestyle-card-visual">
-              <img src="public/assets/real/majlis_golden_sunlight.webp" alt="الضيافة الملكية في ديوان الياقوت" loading="lazy" decoding="async">
-              <div class="lifestyle-visual-tint"></div>
-              <span class="lifestyle-chip">03 • فـخـامَـة وضـيـافـة</span>
-            </div>
-            <div class="lifestyle-card-body">
-              <h3 class="lifestyle-card-title">أصـالـةُ الـضـيـافـةِ والـديـوان</h3>
-              <p class="lifestyle-card-text">
-                صالة استقبال ملكية صُممت بنقوش مغربية وثريات دافئة وإطلالة زجاجية عريضة تجمع العائلة وكبار الضيوف بأبهى درجات الراحة.
-              </p>
-              <div class="lifestyle-card-footer">
-                <span class="lifestyle-metric-tag">إطلالة بانورامية • شاشة 4K</span>
-                <a href="#facilities" class="lifestyle-read-link">استكشف الديوان ←</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
+        <p class="map-note">ملاحظة: مواقع العلامات تقريبية لأغراض التوضيح فقط، ولا تعبّر عن مسافات أو اتجاهات حقيقية بين المرافق.</p>
       </div>
     </section>
-
-
-    <section class="guide-wrap" id="guide" aria-labelledby="guide-head">
+<section class="guide-wrap" id="guide" aria-labelledby="guide-head">
       <div class="container">
         <div class="section-headline-group reveal-box">
           <span class="eyebrow">دليل ريست الشامل</span>
-          <h2 id="guide-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">دَلِـيـل الـشـالـيـه والـمـرافـق والـخـدمـات الـمـعـتـمـدة</h2>
+          <h2 id="guide-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">دلـيـل الشاليه والمرافق والخدمات</h2>
           <p class="text-body">كل ما تود معرفته عن المرافق الـ 13 المعتمدة وقواعد المسبح وقائمة الإضافات والأنشطة</p>
         </div>
 
@@ -6798,7 +6564,7 @@
               <p class="text-body" style="margin-bottom: var(--sp-300);">
                 نوفر لكم خيارات تنسيق وجبات طعام راقية عبر قائمة مطاعم معتمدة ومختارة بعناية: وجبات غداء الأعمال، بوفيهات مفتوحة، ومستلزمات لحوم الشواء الطازجة مع المقبلات والضيافة، وتُحتسب تكلفتها بشكل مستقل وفق القائمة.
               </p>
-              <a href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%20%D8%B9%D9%84%D9%89%20%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%84%D8%B4%D8%A7%D9%84%D9%8A%D9%87%20%D8%B1%D9%8A%D8%B3%D8%AA" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-gold" style="width: fit-content;">
+              <a href="https://wa.me/966508332211?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%20%D8%B9%D9%84%D9%89%20%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D8%B7%D8%B9%D8%A7%D9%85%20%D9%88%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9%20%D9%84%D8%B4%D8%A7%D9%84%D9%8A%D9%87%20%D8%B1%D9%8A%D8%B3%D8%AA" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-gold" style="width: fit-content;">
                 <span>طلب قائمة الطعام عبر واتساب</span>
               </a>
             </div>
@@ -6844,7 +6610,7 @@
       <div class="container">
         <div class="section-headline-group reveal-box">
           <span class="eyebrow">عدسة حية من قلب رِيست</span>
-          <h2 id="gallery-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">تـوثـيـقٌ حـي لِـسِـحـرِ الـمَـكـان والاســتـجـمـام</h2>
+          <h2 id="gallery-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">تـوثـيـق حي لسحر المكان</h2>
           <p class="text-body">لقطات مباشرة للمسبح الداخلي الدافئ والجلسات والحديقة وأركان التصوير الحصرية</p>
         </div>
 
@@ -6964,7 +6730,7 @@
       <div class="container">
         <div class="section-headline-group reveal-box">
           <span class="eyebrow">آلية الحجز في 3 خطوات بسيطة</span>
-          <h2 id="steps-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">خطوات حجز إقامتك بكل سهولة</h2>
+          <h2 id="steps-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">خـطـوات حجز إقامتك بكل سهولة</h2>
           <p class="text-body">نوفر لكم تجربة حجز سلسة وسريعة مع تأكيد فوري ومباشر مع إدارة المنتجع</p>
         </div>
 
@@ -6994,7 +6760,7 @@
         <div class="section-headline-group reveal-box">
           <span class="eyebrow">إجابات واضحة لاستفساراتكم</span>
           <h2 id="faq-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">الأسئلة الشائعة</h2>
-          <p class="text-body">كل ما يهمكم معرفته قبل تثبيت حجزكم في شاليه ومـنـتـجـع رِيـــــســـــت الفاخر</p>
+          <p class="text-body">كل ما يهمكم معرفته قبل تثبيت حجزكم في شاليه ومنتجع ريست الفاخر</p>
         </div>
 
         <div class="faq-accordion-stack reveal-box">
@@ -7088,14 +6854,19 @@
       <div class="container">
         <div class="section-headline-group reveal-box">
           <span class="eyebrow">حاسبة الحجز والتأكيد الفوري</span>
-          <h2 id="calc-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">احـجِـز إقـامَـتـك فـي رِيـــــســـــت</h2>
+          <h2 id="calc-head" class="h-section" style="color: var(--text-pure); margin-bottom: var(--sp-100);">احـجـز إقامتك في رِيست</h2>
           <p class="text-body">حدد اختياراتك وسيتم احتساب التكلفة وتجهيز رسالة حجز فورية على الواتساب</p>
         </div>
 
         <div class="calculator-console reveal-box">
           <!-- Form Inputs -->
           <form id="calc-interactive-form">
-            <div class="form-group-block">
+              <ol class="bk-steps-nav" aria-label="خطوات الحجز">
+                <li><button type="button" class="bk-step-btn" data-goto-step="1" aria-current="step"><span class="bk-num">1</span><span>اختيار الباقة</span></button></li>
+                <li><button type="button" class="bk-step-btn" data-goto-step="2"><span class="bk-num">2</span><span>التاريخ والضيوف</span></button></li>
+                <li><button type="button" class="bk-step-btn" data-goto-step="3"><span class="bk-num">3</span><span>المراجعة والإرسال</span></button></li>
+              </ol>
+<div class="bk-step is-active" data-step="1"><div class="form-group-block">
               <label for="select-pkg-choice" class="field-label">الباقة المطلوبة</label>
               <select id="select-pkg-choice" class="select-box">
                 <option value="day" data-cost="180000" selected>REST DAY — ريست دي (180,000 ريال يمني)</option>
@@ -7106,7 +6877,7 @@
               </select>
             </div>
 
-            <div class="form-group-block">
+            <div class="bk-step-actions"><button type="button" class="btn btn-lg" data-next-step="2">متابعة: التاريخ والضيوف</button></div></div><div class="bk-step" data-step="2"><div class="form-group-block">
               <label for="booking-target-date" class="field-label">تاريخ الحجز المفضل</label>
               <input type="date" id="booking-target-date" class="input-box" required>
             </div>
@@ -7151,11 +6922,10 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-lg btn-whatsapp" style="width: 100%; justify-content: center;">
+            <p class="bk-error" id="bk-date-error" role="alert">يرجى اختيار تاريخ للحجز (لا يمكن أن يكون في الماضي).</p><div class="bk-step-actions"><button type="button" class="btn btn-lg" data-prev-step="1">رجوع</button><button type="button" class="btn btn-lg" data-next-step="3">متابعة: مراجعة الحجز</button></div></div><div class="bk-step" data-step="3"><dl class="bk-review" aria-label="ملخص الحجز للمراجعة"><div><dt>الباقة</dt><dd id="bk-review-pkg">—</dd></div><div><dt>الوقت</dt><dd id="bk-review-time">—</dd></div><div><dt>التاريخ</dt><dd id="bk-review-date">—</dd></div><div><dt>الضيوف</dt><dd id="bk-review-guests">—</dd></div><div><dt>الإضافات</dt><dd id="bk-review-addons">—</dd></div><div><dt>السعر التقديري</dt><dd id="bk-review-price">—</dd></div></dl><div class="bk-step-actions"><button type="button" class="btn btn-lg" data-prev-step="2">رجوع</button></div><button type="submit" class="btn btn-lg btn-whatsapp" style="width: 100%; justify-content: center;">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
               <span>إرسال تفاصيل الحجز وتأكيده عبر واتساب</span>
-            </button>
-          </form>
+            </button></div></form>
 
           <!-- Real-Time Calculation Summary -->
           <div class="calc-summary-panel">
@@ -7230,7 +7000,7 @@
 
         <div class="suffo-hotline-center">
           <span class="suffo-ticker-label" style="font-size: 0.8125rem; margin-bottom: 12px; letter-spacing: 0.15em;">خط الحجز والضيافة المباشر</span>
-          <a href="tel:+966500000000" class="suffo-hotline-phone" dir="ltr">+966 50 833-22-11</a>
+          <a href="tel:+966508332211" class="suffo-hotline-phone" dir="ltr">+966 50 833-22-11</a>
           <a href="mailto:reservations@rest-chalet.sa" class="suffo-hotline-email">reservations@rest-chalet.sa</a>
         </div>
       </div>
@@ -7241,7 +7011,7 @@
       <div class="footer-columns-grid reveal-box">
         <div>
           <div class="nav-brand" style="margin-bottom: var(--sp-200);">
-            <img src="public/assets/real/brand_logo.webp" alt="شعار شاليه ريست" class="nav-brand-img" decoding="async">
+            <img src="public/assets/brand/rest-symbol.svg" alt="شعار شاليه ريست" class="nav-brand-img" decoding="async">
             <div class="nav-brand-titles">
               <span class="nav-brand-ar">شاليه ومنتجع رِيست</span>
               <span class="nav-brand-en">REST RESORT & CHALET</span>
@@ -7258,7 +7028,9 @@
           <ul class="footer-nav-list">
             <li><a href="#hero">الرئيسية</a></li>
             <li><a href="#packages">الباقات والأسعار</a></li>
-            <li><a href="#facilities">أرجاء الشاليه</a></li>
+            <li><a href="#facilities">أرجاء الشاليه</a>
+              <li><a href="#lifestyle">أسلوب الحياة</a></li>
+              <li><a href="#resort-map">خريطة المنتجع</a></li></li>
             <li><a href="#guide">دليل المرافق والقواعد</a></li>
             <li><a href="#gallery">المسرح السينمائي والمعرض</a></li>
             <li><a href="#faq">الأسئلة الشائعة</a></li>
@@ -7282,7 +7054,7 @@
           <p class="text-caption" style="margin-bottom: var(--sp-200);">
             فريق خدمة العملاء متواجد على مدار الساعة للرد على استفساراتكم وتأكيد الحجوزات المباشرة.
           </p>
-          <a href="https://wa.me/?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D8%B4%D8%A7%D9%84%D9%8A%D9%87%20%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%B9%20%D8%B1%D9%8A%D8%B3%D8%AA" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp" style="width: fit-content;">
+          <a href="https://wa.me/966508332211?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D8%B4%D8%A7%D9%84%D9%8A%D9%87%20%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%B9%20%D8%B1%D9%8A%D8%B3%D8%AA" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp" style="width: fit-content;">
             <span>محادثة واتساب مباشرة</span>
           </a>
         </div>
@@ -7293,7 +7065,8 @@
         <div class="font-serif" style="color: var(--gold-light); letter-spacing: 1px;">REST RESORT & CHALET</div>
       </div>
     </div>
-  </footer>
+              <p class="footer-credits" style="color: var(--text-muted); font-size: .85rem; margin-top: var(--sp-300);">مقاطع الفيديو الاحتياطية في الواجهة: Pexels. جميع صور المكان من أصول ريست الحقيقية.</p>
+          </footer>
 
   <!-- Lightbox Modal Dialog -->
   <dialog class="luxury-lightbox" id="img-modal-dialog" aria-label="عارض الصور المكبرة">
@@ -7324,8 +7097,7 @@
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add('in-view');
-          } else {
-            entry.target.classList.remove('in-view');
+            revealObserver.unobserve(entry.target);
           }
         });
       }, { rootMargin: '0px 0px -40px 0px', threshold: 0.1 });
@@ -7644,6 +7416,7 @@
     updateMorphMetrics();
 
     function onMorphScroll() {
+      updateMorphMetrics();
       if (!morphSection || cachedMorphDist <= 0) return;
       var top = window.pageYOffset || document.documentElement.scrollTop;
       var scrolled = top - cachedMorphTop;
@@ -7781,8 +7554,10 @@
       facilitiesPanels.forEach(function (panel, idx) {
         if (idx === stepIndex) {
           panel.classList.add('is-active');
+          panel.classList.add('is-scroll-active');
         } else {
           panel.classList.remove('is-active');
+          panel.classList.remove('is-scroll-active');
         }
       });
 
@@ -7839,6 +7614,7 @@
     updateFacilitiesMetrics();
 
     function onFacilitiesScroll() {
+      updateFacilitiesMetrics();
       if (!facilitiesSection || cachedFacDist <= 0) return;
       var top = window.pageYOffset || document.documentElement.scrollTop;
       var scrolled = top - cachedFacTop;
@@ -8178,7 +7954,7 @@
       var scheduleDictionary = {
         'day': '09:00 ص — 09:00 م (12 ساعة)',
         'night': '11:00 م — 07:00 ص (8 ساعات)',
-        'moment': '09:00 ص — 09:00 م (تجهيز مناسبات)',
+        'moment': '04:00 م — 10:00 م (6 ساعات — أمسية مناسبات)',
         'business-ext': '12:00 ظ — 09:00 م (فترة ممتدة)',
         'business-full': '12:00 ظ — 12:00 منتصف الليل (يوم كامل)'
       };
@@ -8248,7 +8024,7 @@
         ];
         var msg = lines.join("\n");
 
-        var waUrl = "https://wa.me/?text=" + encodeURIComponent(msg);
+        var waUrl = "https://wa.me/966508332211?text=" + encodeURIComponent(msg);
         window.open(waUrl, '_blank', 'noopener,noreferrer');
       });
     }
@@ -8546,57 +8322,135 @@
       });
     }
 
-    
-    // ==========================================================================
-    // REMOTION MOTION ENGINE (Spring Physics & Hawaiian Lagoon Dynamics)
-    // Inspired by github.com/remotion-dev/remotion
-    // ==========================================================================
-    var Remotion = (function () {
-      function spring(frame, fps, config) {
-        var fpsVal = fps || 60;
-        var cfg = config || { damping: 14, mass: 1, stiffness: 120, initialVelocity: 0 };
-        var m = cfg.mass || 1;
-        var k = cfg.stiffness || 120;
-        var c = cfg.damping || 14;
-        var v0 = cfg.initialVelocity || 0;
-        var t = frame / fpsVal;
-        var w0 = Math.sqrt(k / m);
-        var zeta = c / (2 * Math.sqrt(m * k));
+    // Dynamic Year
+    var dynYear = document.getElementById('dyn-year');
+    if (dynYear) dynYear.textContent = new Date().getFullYear();
 
-        if (zeta < 1) {
-          var wd = w0 * Math.sqrt(1 - zeta * zeta);
-          var envelope = Math.exp(-zeta * w0 * t);
-          var val = 1 - envelope * (Math.cos(wd * t) + ((zeta * w0 - v0) / wd) * Math.sin(wd * t));
-          return Math.min(1.04, Math.max(0, val));
-        } else {
-          return 1 - Math.exp(-w0 * t) * (1 + (w0 - v0) * t);
+  })();
+  </script>
+
+    <script>
+    (function () {
+      'use strict';
+      /* Cinematic intro: show Remotion video when it exists, else the CSS title sequence.
+         The overlay fades on its own (CSS animation); remove it from the DOM afterwards. */
+      var intro = document.getElementById('cinematic-intro');
+      var introVideo = document.getElementById('remotion-intro-video');
+      function killIntro() { if (intro && intro.parentNode) intro.parentNode.removeChild(intro); }
+      if (typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { killIntro(); }
+      else if (intro) {
+        if (introVideo) {
+          introVideo.addEventListener('error', function () { introVideo.style.display = 'none'; }, true);
+          introVideo.addEventListener('loadeddata', function () { introVideo.classList.add('is-live'); });
+          setTimeout(function () { if (introVideo && introVideo.readyState < 2) introVideo.style.display = 'none'; }, 1800);
         }
+        intro.addEventListener('click', killIntro);
+        setTimeout(killIntro, 3800);
       }
 
-      function interpolate(val, inRange, outRange) {
-        if (val <= inRange[0]) return outRange[0];
-        if (val >= inRange[1]) return outRange[1];
-        var progress = (val - inRange[0]) / (inRange[1] - inRange[0]);
-        // Remotion cubic ease out
-        var ease = 1 - Math.pow(1 - progress, 3);
-        return outRange[0] + ease * (outRange[1] - outRange[0]);
+      /* Booking multi-step: pure navigation + validation around the existing calculator.
+         Pricing, recalculation and the WhatsApp submit handler are untouched. */
+      var form = document.getElementById('calc-interactive-form');
+      if (form) {
+        var steps = Array.prototype.slice.call(form.querySelectorAll('.bk-step'));
+        var navBtns = Array.prototype.slice.call(form.querySelectorAll('.bk-step-btn'));
+        var current = 1;
+        function showStep(n) {
+          current = n;
+          steps.forEach(function (s) { s.classList.toggle('is-active', parseInt(s.getAttribute('data-step'), 10) === n); });
+          navBtns.forEach(function (b) {
+            var bn = parseInt(b.getAttribute('data-goto-step'), 10);
+            if (bn === n) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current');
+            b.classList.toggle('is-done', bn < n);
+          });
+          if (n === 3) fillReview();
+          var active = form.querySelector('.bk-step.is-active');
+          if (active) { var f = active.querySelector('select, input, button'); if (f) f.focus({ preventScroll: true }); }
+        }
+        function fillReview() {
+          var g = function (id) { var el = document.getElementById(id); return el ? el.textContent : '—'; };
+          var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
+          set('bk-review-pkg', g('live-pkg-name'));
+          set('bk-review-time', g('live-timing-data'));
+          set('bk-review-date', g('live-date-data'));
+          set('bk-review-guests', g('live-guests-data'));
+          set('bk-review-addons', g('live-addons-data'));
+          set('bk-review-price', (g('live-price-sum') || '') + ' ريال يمني');
+        }
+        function dateValid() {
+          var d = document.getElementById('booking-target-date');
+          if (!d || !d.value) return false;
+          /* Compare ISO date strings built from LOCAL components: toISOString() is UTC
+             and would reject the page's own default date late at night in +03. */
+          var now = new Date();
+          var p = function (n) { return (n < 10 ? '0' : '') + n; };
+          var todayLocal = now.getFullYear() + '-' + p(now.getMonth() + 1) + '-' + p(now.getDate());
+          return d.value >= todayLocal;
+        }
+        form.addEventListener('click', function (e) {
+          var next = e.target.closest('[data-next-step]');
+          var prev = e.target.closest('[data-prev-step]');
+          var go = e.target.closest('[data-goto-step]');
+          if (next) {
+            var n = parseInt(next.getAttribute('data-next-step'), 10);
+            if (n === 3 && !dateValid()) {
+              var err = document.getElementById('bk-date-error');
+              if (err) err.classList.add('is-show');
+              var d = document.getElementById('booking-target-date');
+              if (d) d.focus();
+              return;
+            }
+            var err2 = document.getElementById('bk-date-error');
+            if (err2) err2.classList.remove('is-show');
+            showStep(n);
+          } else if (prev) { showStep(parseInt(prev.getAttribute('data-prev-step'), 10)); }
+          else if (go) {
+            var gn = parseInt(go.getAttribute('data-goto-step'), 10);
+            if (gn === 3 && !dateValid()) { var er = document.getElementById('bk-date-error'); if (er) er.classList.add('is-show'); showStep(2); return; }
+            showStep(gn);
+          }
+        });
+        /* Enter inside step 1/2 must advance, not submit (submit lives on step 3). */
+        form.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' && current < 3) {
+            e.preventDefault();
+            if (current === 2 && !dateValid()) { var er = document.getElementById('bk-date-error'); if (er) er.classList.add('is-show'); return; }
+            showStep(current + 1);
+          }
+        });
       }
 
-      return {
-        spring: spring,
-        interpolate: interpolate
+      /* Resort map: markers switch the info panel (data copied from the site directory). */
+      var MAP = {
+        pool: { img: 'public/assets/real/pool_waterfall_fountain.webp', alt: 'المسبح الداخلي والشلال', name: 'المسبح الداخلي والشلال', desc: 'عمق متدرج، تدفئة مياه ذكية، شلال جداري انسيابي ونوافير قوسية', area: 'المساحة: 120 م²' },
+        majlis: { img: 'public/assets/real/majlis_grand_hall.webp', alt: 'مجلس الياقوت الملكي', name: 'مجلس الياقوت الملكي', desc: 'إطلالة بانورامية كاملة، تكييف مركزي متطور، وشاشة عرض 4K', area: 'المساحة: 85 م²' },
+        hikaya: { img: 'public/assets/real/hikaya_sunken_lounge.webp', alt: 'جلسة حكاية وموقد النار', name: 'جلسة حكاية وموقد النار', desc: 'موقد حطب طبيعي، سمر عائلي هادئ، تحت زهور الكرز المضيئة', area: 'المساحة: 65 م²' },
+        bustan: { img: 'public/assets/real/dining_pergola_cafe.webp', alt: 'جلسة بستان والمظلة الريفية', name: 'جلسة بستان والمظلة الريفية', desc: 'طبيعة خضراء ورذاذ ماء منعش وجلسة طعام خارجية مريحة', area: 'المساحة: 90 م²' },
+        cabin: { img: 'public/assets/real/courtyard_cabin_cabana.webp', alt: 'الكوخ الأبيض الريفي', name: 'الكوخ الأبيض الريفي', desc: 'طراز خشبي أوروبي، صالة شاي دافئة، وشرفة مطلة على الحدائق', area: 'المساحة: 55 م²' },
+        playground: { img: 'public/assets/real/courtyard_playground_lawn.webp', alt: 'الملاعب الرياضية والحديقة', name: 'الملاعب الرياضية والحديقة', desc: 'ملعب كرة طائرة رملي، مسطحات خضراء، ومنطقة ألعاب أطفال آمنة', area: 'المساحة: 450 م²' }
       };
+      var markers = document.querySelectorAll('.map-marker');
+      markers.forEach(function (mk) {
+        mk.addEventListener('click', function () {
+          var d = MAP[mk.getAttribute('data-map')];
+          if (!d) return;
+          markers.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+          mk.setAttribute('aria-pressed', 'true');
+          var img = document.getElementById('map-panel-img');
+          if (img) { img.src = d.img; img.alt = d.alt; }
+          var nm = document.getElementById('map-panel-name'); if (nm) nm.textContent = d.name;
+          var ds = document.getElementById('map-panel-desc'); if (ds) ds.textContent = d.desc;
+          var ar = document.getElementById('map-panel-area'); if (ar) ar.textContent = d.area;
+        });
+      });
     })();
+    </script>
 
-    // Apply Remotion Elastic Physics to Cards on Hover
-    document.querySelectorAll('.guide-horizon-card, .suffo-metric-card, .booking-card, .gallery-brick').forEach(function (card) {
-      card.classList.add('remotion-spring-hover');
-    });
 
-    
-    // ==========================================================================
-    // BOTANICAL SCROLL DRAWING ENGINE (Palm Tree & Red Roses)
-    // ==========================================================================
+    <script>
+    (function () {
+      'use strict';
+      /* v10: botanical draw-on-scroll (ported from the repo variant) */
     var botanicalArts = document.querySelectorAll('.botanical-scroll-art');
     if ('IntersectionObserver' in window && botanicalArts.length > 0) {
       var botanicalObserver = new IntersectionObserver(function (entries) {
@@ -8617,25 +8471,90 @@
       botanicalArts.forEach(function (art) { art.classList.add('is-drawn'); });
     }
 
-    // ==========================================================================
-    // SUFFO METRIC CARDS CLICK TOGGLE (Crystal-Clear High Contrast)
-    // ==========================================================================
-    var suffoCards = document.querySelectorAll('.suffo-metric-card');
-    suffoCards.forEach(function (card) {
-      card.addEventListener('click', function (e) {
-        var isAlreadyRevealed = card.classList.contains('is-revealed');
-        suffoCards.forEach(function (c) { c.classList.remove('is-revealed'); });
-        if (!isAlreadyRevealed) {
-          card.classList.add('is-revealed');
+      /* v10: lift the fixed WhatsApp pill while a sticky section with a
+         bottom dock (facilities / packages) is on screen */
+      if ('IntersectionObserver' in window) {
+        var waLiftSections = [document.getElementById('facilities'), document.getElementById('packages')].filter(Boolean);
+        var waLiftState = {};
+        var waLiftObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { waLiftState[e.target.id] = e.isIntersecting; });
+          var anyVisible = Object.keys(waLiftState).some(function (k) { return waLiftState[k]; });
+          document.body.classList.toggle('wa-lifted', anyVisible);
+        }, { threshold: 0.05 });
+        waLiftSections.forEach(function (s) { waLiftObserver.observe(s); });
+      }
+
+      /* v10: directory rows activate on scroll (touch/mobile hover equivalent) */
+      var dirRows = document.querySelectorAll('.suffo-dir-row');
+      var dirPreview = document.getElementById('suffo-dir-preview');
+      var dirPreviewImg = document.getElementById('suffo-dir-preview-img');
+      if (dirRows.length > 0) {
+        var dirTable = document.getElementById('suffo-dir-table');
+        function activateDirRow(row) {
+          dirRows.forEach(function (r) { r.classList.remove('active'); });
+          row.classList.add('active');
+          if (dirPreview && dirPreviewImg && row.getAttribute('data-img')) {
+            dirPreviewImg.setAttribute('src', row.getAttribute('data-img'));
+            dirPreview.classList.add('is-active');
+          }
         }
-      });
-    });
+        if ('IntersectionObserver' in window) {
+          var dirObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) activateDirRow(entry.target);
+            });
+          }, { rootMargin: '-35% 0px -45% 0px', threshold: 0 });
+          dirRows.forEach(function (r) { dirObserver.observe(r); });
+        } else {
+          activateDirRow(dirRows[0]);
+        }
+        dirRows.forEach(function (r) {
+          r.addEventListener('click', function () { activateDirRow(r); });
+        });
+        if (dirTable) {
+          dirTable.addEventListener('mouseleave', function () {
+            if (dirPreview) dirPreview.classList.remove('is-active');
+          });
+        }
+      }
 
-    // Dynamic Year
-    var dynYear = document.getElementById('dyn-year');
-    if (dynYear) dynYear.textContent = new Date().getFullYear();
+      /* v10: metric cards activate on scroll (touch/mobile hover equivalent) */
+      var metricCards = document.querySelectorAll('.suffo-metric-card');
+      if (metricCards.length > 0) {
+        if ('IntersectionObserver' in window) {
+          var metricObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-revealed');
+                entry.target.classList.add('is-scroll-active');
+                metricObserver.unobserve(entry.target);
+              }
+            });
+          }, { rootMargin: '0px 0px -30px 0px', threshold: 0.15 });
+          metricCards.forEach(function (c) { metricObserver.observe(c); });
+        } else {
+          metricCards.forEach(function (c) { c.classList.add('is-revealed'); });
+        }
+      }
+    })();
+    </script>
 
-  })();
-  </script>
-</body>
+  </body>
 </html>
+
+<!-- REST Tropical v9 — CHANGELOG (transform of index_8_sq0q.html):
+ * Tokens remapped to brief palette (Ocean #087FAD, Turquoise #24C6C8, Palm #0E7490,
+   Sunshine #F9A8D4, Coral #FB7185, Sand #FFF9ED, Deep Ocean #073B4C, Mint #D9F4E9);
+   dark = deep ocean, light = sand white. El Messiri display headings.
+ * NEW: Tropical Lifestyle section (real photos only); NEW: illustrative resort map
+   (labelled non-geographic, areas from the site directory); NEW: package compare table.
+ * Booking is now 3 steps around the UNCHANGED calculator + WhatsApp submit.
+ * PRICE CONFLICT RESOLVED in favour of the booking calculator (see report):
+   MOMENT card 100,000 -> 250,000; BUSINESS card 90,000/val=business(broken) ->
+   business-full 70,000; moment timing dict 09:00-21:00 -> 04:00-10:00 PM evening slot.
+ * CONTACT: tel placeholder +966500000000 -> +966508332211 (the number the site
+   already displays); wa.me links had no number -> 966508332211. CONFIRM with owner.
+ * Cinematic intro overlay + Remotion slot remotion/out/brand-reveal.mp4 (graceful
+   fallback to the CSS title sequence when the render is not present).
+ * Assets NOT bundled: public/assets/real/* must be copied next to this file.
+-->
