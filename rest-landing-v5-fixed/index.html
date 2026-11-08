@@ -3877,6 +3877,139 @@
         transform: translate3d(90px, 26px, 0) scale(0.84) rotate(5deg);
       }
     }
+    @media (max-width: 768px) {
+      .packages-morph-section {
+        height: 320vh !important;
+      }
+      .morph-sticky-stage {
+        height: 100vh !important;
+        padding: 14px 0 !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+      }
+      .suffo-packages-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 6px !important;
+        padding: 0 16px !important;
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+      }
+      .suffo-editorial-side {
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 2px !important;
+        width: 100% !important;
+      }
+      .suffo-watermark-num {
+        display: none !important;
+      }
+      .suffo-section-marker {
+        font-size: 0.6875rem !important;
+        margin-bottom: 2px !important;
+      }
+      .suffo-editorial-title {
+        font-size: 1.25rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 6px !important;
+        text-align: center !important;
+      }
+      .suffo-filter-pills-row {
+        margin-bottom: 4px !important;
+        gap: 6px !important;
+        justify-content: center !important;
+      }
+      .suffo-cat-pill {
+        padding: 4px 10px !important;
+        font-size: 0.725rem !important;
+      }
+      .suffo-search-pill-box {
+        display: none !important;
+      }
+      .suffo-editorial-desc {
+        display: none !important;
+      }
+      .suffo-deck-stage {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        height: 380px !important;
+        margin: 2px auto 0 !important;
+      }
+      .package-morph-card {
+        max-width: 295px !important;
+        width: 92% !important;
+        height: 365px !important;
+        padding: 12px 14px !important;
+        border-radius: 18px !important;
+      }
+      .suffo-card-photo-wrap {
+        height: 120px !important;
+        margin-bottom: 8px !important;
+        border-radius: 12px !important;
+      }
+      .suffo-card-title {
+        font-size: 0.95rem !important;
+        margin-bottom: 2px !important;
+      }
+      .suffo-card-subline {
+        font-size: 0.725rem !important;
+        margin-bottom: 6px !important;
+        line-height: 1.3 !important;
+      }
+      .suffo-card-specs-row {
+        gap: 4px !important;
+        margin-bottom: 6px !important;
+      }
+      .suffo-card-spec-chip {
+        font-size: 0.65rem !important;
+        padding: 2px 6px !important;
+      }
+      .suffo-card-bottom-row {
+        padding-top: 6px !important;
+      }
+      .suffo-price-num {
+        font-size: 1.3rem !important;
+      }
+      .suffo-card-plus-btn {
+        width: 36px !important;
+        height: 36px !important;
+      }
+      /* Fanned cards stay strictly within mobile bounds */
+      .package-morph-card.is-center {
+        transform: translate3d(0, 0, 0) scale(1) rotate(0deg) !important;
+        opacity: 1 !important;
+        z-index: 30 !important;
+        pointer-events: auto !important;
+      }
+      .package-morph-card.is-right {
+        transform: translate3d(22px, 8px, -20px) scale(0.93) rotate(2deg) !important;
+        opacity: 0.75 !important;
+        z-index: 20 !important;
+        pointer-events: auto !important;
+      }
+      .package-morph-card.is-left {
+        transform: translate3d(-22px, 8px, -20px) scale(0.93) rotate(-2deg) !important;
+        opacity: 0.75 !important;
+        z-index: 20 !important;
+        pointer-events: auto !important;
+      }
+      .package-morph-card.is-far-right {
+        transform: translate3d(38px, 15px, -40px) scale(0.86) rotate(3.5deg) !important;
+        opacity: 0.45 !important;
+        z-index: 10 !important;
+        pointer-events: none !important;
+      }
+      .package-morph-card.is-below {
+        transform: translate3d(0, 50px, 0) scale(0.88) !important;
+        opacity: 0 !important;
+        z-index: 1 !important;
+        pointer-events: none !important;
+      }
+    }
 
     /* 3. Facilities Section — Suffo Metric Cards Strip & Live Spec Ticker */
     .suffo-facilities-section {
@@ -3901,8 +4034,13 @@
     }
     @media (max-width: 640px) {
       .suffo-metric-strip-track {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+      .suffo-metric-card {
+        height: 250px !important;
+        padding: 18px 20px !important;
+        border-radius: 18px !important;
       }
     }
 
@@ -4157,6 +4295,13 @@
       transform: translate3d(0, 0, 0) rotate(8deg) scale(1);
     }
 
+    .suffo-dir-row-header {
+      display: contents;
+    }
+    .suffo-dir-mobile-photo {
+      display: none;
+    }
+
     .suffo-dir-row {
       display: grid;
       grid-template-columns: 1.5fr 2fr 1fr;
@@ -4171,12 +4316,89 @@
     }
     @media (max-width: 768px) {
       .suffo-dir-row {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        padding: 16px 10px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+        padding: 16px 14px !important;
+        margin-bottom: 12px !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        background: rgba(255, 255, 255, 0.03) !important;
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+      [data-theme="light"] .suffo-dir-row {
+        background: #FFFFFF !important;
+        border-color: rgba(2, 132, 199, 0.16) !important;
+        box-shadow: 0 4px 14px rgba(2, 132, 199, 0.06) !important;
+      }
+      .suffo-dir-row-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+      }
+      .suffo-dir-col-name {
+        font-size: 1.05rem !important;
+        font-weight: 700 !important;
+        color: var(--text-pure) !important;
+      }
+      .suffo-dir-col-area {
+        font-family: var(--font-sans) !important;
+        font-size: 0.875rem !important;
+        font-weight: 700 !important;
+        color: var(--gold-light) !important;
+        background: rgba(255, 255, 255, 0.06) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        padding: 3px 9px !important;
+        border-radius: 8px !important;
+      }
+      [data-theme="light"] .suffo-dir-col-area {
+        color: var(--brand-sky) !important;
+        background: rgba(2, 132, 199, 0.08) !important;
+        border-color: rgba(2, 132, 199, 0.2) !important;
       }
       .suffo-dir-col-desc {
-        display: none;
+        display: block !important;
+        font-size: 0.8125rem !important;
+        line-height: 1.6 !important;
+        color: var(--text-sub) !important;
+      }
+      .suffo-dir-mobile-photo {
+        display: block !important;
+        width: 100% !important;
+        height: 0 !important;
+        opacity: 0 !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+        transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, margin-top 0.35s ease !important;
+        margin-top: 0 !important;
+      }
+      .suffo-dir-mobile-photo img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+      }
+      .suffo-dir-row.active {
+        border-color: #0EA5E9 !important;
+        background: rgba(14, 165, 233, 0.1) !important;
+        box-shadow: 0 10px 28px rgba(14, 165, 233, 0.2) !important;
+        transform: translateY(-2px) !important;
+      }
+      [data-theme="light"] .suffo-dir-row.active {
+        background: rgba(2, 132, 199, 0.08) !important;
+        border-color: #0284C7 !important;
+      }
+      .suffo-dir-row.active .suffo-dir-col-name {
+        color: #38BDF8 !important;
+      }
+      [data-theme="light"] .suffo-dir-row.active .suffo-dir-col-name {
+        color: #0284C7 !important;
+      }
+      .suffo-dir-row.active .suffo-dir-mobile-photo {
+        height: 155px !important;
+        opacity: 1 !important;
+        margin-top: 8px !important;
       }
     }
     .suffo-dir-row:hover,
@@ -5485,6 +5707,7 @@
               <button type="button" class="suffo-cat-pill active" data-step="0" role="tab" aria-selected="true">باقة اليوم الكامل</button>
               <button type="button" class="suffo-cat-pill" data-step="1" role="tab" aria-selected="false">المبيت الملكي</button>
               <button type="button" class="suffo-cat-pill" data-step="2" role="tab" aria-selected="false">عطلة الأسبوع</button>
+              <button type="button" class="suffo-cat-pill" data-step="3" role="tab" aria-selected="false">المناسبات الخاصة</button>
             </div>
 
             <span class="suffo-section-marker"><span>•</span> REST PACKAGES</span>
@@ -6122,51 +6345,91 @@
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/pool_waterfall_fountain.webp">
-            <div class="suffo-dir-col-name">المسبح الداخلي والشلال</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">المسبح الداخلي والشلال</div>
+              <div class="suffo-dir-col-area">120 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">عمق متدرج، تدفئة مياه ذكية، شلال جداري انسيابي ونوافير قوسية</div>
-            <div class="suffo-dir-col-area">120 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/pool_waterfall_fountain.webp" alt="المسبح الداخلي والشلال" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/majlis_grand_hall.webp">
-            <div class="suffo-dir-col-name">مجلس الياقوت الملكي</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">مجلس الياقوت الملكي</div>
+              <div class="suffo-dir-col-area">85 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">إطلالة بانورامية كاملة، تكييف مركزي متطور، وشاشة عرض 4K</div>
-            <div class="suffo-dir-col-area">85 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/majlis_grand_hall.webp" alt="مجلس الياقوت الملكي" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/hikaya_sunken_lounge.webp">
-            <div class="suffo-dir-col-name">جلسة حكاية وموقد النار</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">جلسة حكاية وموقد النار</div>
+              <div class="suffo-dir-col-area">65 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">موقد حطب طبيعي، سمر عائلي هادئ، تحت زهور الكرز المضيئة</div>
-            <div class="suffo-dir-col-area">65 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/hikaya_sunken_lounge.webp" alt="جلسة حكاية وموقد النار" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/dining_pergola_cafe.webp">
-            <div class="suffo-dir-col-name">جلسة بستان والمظلة الريفية</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">جلسة بستان والمظلة الريفية</div>
+              <div class="suffo-dir-col-area">90 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">طبيعة خضراء ورذاذ ماء منعش وجلسة طعام خارجية مريحة</div>
-            <div class="suffo-dir-col-area">90 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/dining_pergola_cafe.webp" alt="جلسة بستان والمظلة الريفية" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/courtyard_cabin_cabana.webp">
-            <div class="suffo-dir-col-name">الكوخ الأبيض الريفي</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">الكوخ الأبيض الريفي</div>
+              <div class="suffo-dir-col-area">55 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">طراز خشبي أوروبي، صالة شاي دافئة، وشرفة مطلة على الحدائق</div>
-            <div class="suffo-dir-col-area">55 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/courtyard_cabin_cabana.webp" alt="الكوخ الأبيض الريفي" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/courtyard_playground_lawn.webp">
-            <div class="suffo-dir-col-name">الملاعب الرياضية والحديقة</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">الملاعب الرياضية والحديقة</div>
+              <div class="suffo-dir-col-area">450 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">ملعب كرة طائرة رملي، مسطحات خضراء، ومنطقة ألعاب أطفال آمنة</div>
-            <div class="suffo-dir-col-area">450 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/courtyard_playground_lawn.webp" alt="الملاعب الرياضية والحديقة" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/window_mirror_floral.webp">
-            <div class="suffo-dir-col-name">سويت منامك والراحة الفندقية</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">سويت منامك والراحة الفندقية</div>
+              <div class="suffo-dir-col-area">70 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">سرير كينج ملكي، حمام خاص متكامل، وخصوصية تامة للاستراحة</div>
-            <div class="suffo-dir-col-area">70 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/window_mirror_floral.webp" alt="سويت منامك والراحة الفندقية" loading="lazy" decoding="async">
+            </div>
           </div>
 
           <div class="suffo-dir-row" data-img="public/assets/real/hikaya_firepit_detail.webp">
-            <div class="suffo-dir-col-name">منطقة الشواء وغرف التبديل</div>
+            <div class="suffo-dir-row-header">
+              <div class="suffo-dir-col-name">منطقة الشواء وغرف التبديل</div>
+              <div class="suffo-dir-col-area">45 م²</div>
+            </div>
             <div class="suffo-dir-col-desc">شواية متكاملة، مرافق استحمام حديثة، وغرف تبديل ملابس خاصة</div>
-            <div class="suffo-dir-col-area">45 م²</div>
+            <div class="suffo-dir-mobile-photo">
+              <img src="public/assets/real/hikaya_firepit_detail.webp" alt="منطقة الشواء وغرف التبديل" loading="lazy" decoding="async">
+            </div>
           </div>
 
         </div>
@@ -7572,7 +7835,7 @@
       document.getElementById('morph-card-2'),
       document.getElementById('morph-card-3')
     ];
-    var morphPills = document.querySelectorAll('.morph-track-pill');
+    var morphPills = document.querySelectorAll('.suffo-cat-pill, .morph-track-pill');
     var morphCounter = document.getElementById('morph-step-counter');
     var morphProgressFill = document.getElementById('morph-progress-fill');
     var morphPrevBtn = document.getElementById('morph-prev-btn');
@@ -7608,8 +7871,9 @@
       }
 
       // Update tracker pills
-      morphPills.forEach(function (pill, idx) {
-        if (idx === stepIndex) {
+      morphPills.forEach(function (pill) {
+        var step = parseInt(pill.getAttribute('data-step'), 10);
+        if (step === stepIndex) {
           pill.classList.add('active');
           pill.setAttribute('aria-selected', 'true');
         } else {
@@ -8452,6 +8716,30 @@
         dirPreview.classList.remove('is-active');
         dirRows.forEach(function (r) { r.classList.remove('active'); });
       });
+
+      // Scroll-Activated Directory Rows on Mobile & Touch Screens
+      if ('IntersectionObserver' in window && dirRows.length > 0) {
+        var dirScrollObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              dirRows.forEach(function (r) { r.classList.remove('active'); });
+              entry.target.classList.add('active');
+              var imgSrc = entry.target.getAttribute('data-img');
+              if (dirPreviewImg && imgSrc) {
+                dirPreviewImg.src = imgSrc;
+              }
+            }
+          });
+        }, {
+          root: null,
+          rootMargin: '-30% 0px -30% 0px',
+          threshold: 0.25
+        });
+
+        dirRows.forEach(function (row) {
+          dirScrollObserver.observe(row);
+        });
+      }
     }
 
     // 4. Suffo Metric Strip Hover/Touch Crossfade
@@ -8618,9 +8906,28 @@
     }
 
     // ==========================================================================
-    // SUFFO METRIC CARDS CLICK TOGGLE (Crystal-Clear High Contrast)
+    // SUFFO METRIC CARDS SCROLL-ACTIVATION & CLICK TOGGLE
     // ==========================================================================
     var suffoCards = document.querySelectorAll('.suffo-metric-card');
+    if ('IntersectionObserver' in window && suffoCards.length > 0) {
+      var metricScrollObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            suffoCards.forEach(function (c) { c.classList.remove('is-revealed'); });
+            entry.target.classList.add('is-revealed');
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '-26% 0px -26% 0px',
+        threshold: 0.2
+      });
+
+      suffoCards.forEach(function (card) {
+        metricScrollObserver.observe(card);
+      });
+    }
+
     suffoCards.forEach(function (card) {
       card.addEventListener('click', function (e) {
         var isAlreadyRevealed = card.classList.contains('is-revealed');
