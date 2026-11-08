@@ -4896,6 +4896,9 @@ h1, h2 { font-family: var(--font-display); letter-spacing: 0; }
     </style>
 <style id="preview-design-polish">
 /* ===== PREVIEW DESIGN POLISH — de-template pass (visual audit 2026-11-08) ===== */
+/* 0) Hero text visible immediately: never wait for the reveal observer or the
+   video to settle (a phone viewer saw an empty hero while they were loading). */
+.hero-text-block .reveal-box, .hero-text-block .reveal-token { opacity: 1 !important; transform: none !important; transition: none !important; }
 /* 1) Hero headline: solid ink + ONE pink accent word, no rainbow gradient text. */
 .hero-heading { background: none !important; -webkit-text-fill-color: #F8FAFC !important; color: #F8FAFC !important; }
 .hero-heading .hero-accent { color: #F9A8D4; -webkit-text-fill-color: #F9A8D4; }
@@ -4937,6 +4940,12 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
 /* 15) Palm showcase: fuller palm in a taller card (desktop). */
 @media (min-width: 901px) { .lifestyle-palm-showcase-card { height: 430px; } .palm-svg-wrap { height: 340px; } .palm-svg-wrap .botanical-svg { max-height: 330px; transform: scale(1.1); } }
 </style>
+<noscript><style>
+/* NO-JS SAFE VIEW: content must never depend on JS to become visible. */
+.reveal-box { opacity: 1 !important; transform: none !important; transition: none !important; }
+.reveal-box svg { opacity: 1 !important; transform: none !important; }
+.reveal-token { opacity: 1 !important; transform: none !important; }
+</style></noscript>
 </head>
 <body>
     <a class="skip-link" href="#booking">تخطَّ إلى الحجز مباشرة</a>
@@ -5152,8 +5161,8 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
         <div class="hero-scene is-active" id="hero-scene-1">
           <div class="hero-media-wrap">
             <video class="hero-video-elem" id="hero-video-1" autoplay loop muted playsinline poster="https://images.pexels.com/photos/6821435/pexels-photo-6821435.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1260&h=750&dpr=1">
-              <source src="https://videos.pexels.com/video-files/7578552/7578552-hd_1920_1080_30fps.mp4" type="video/mp4">
-              <source src="https://videos.pexels.com/video-files/7578552/7578552-hd_1920_1080_30fps.mp4" type="video/mp4">
+              <source src="https://videos.pexels.com/video-files/7293628/7293628-hd_1280_720_30fps.mp4" type="video/mp4">
+              <source src="https://videos.pexels.com/video-files/7293628/7293628-hd_1280_720_30fps.mp4" type="video/mp4">
             </video>
             <div class="hero-sheer-overlay"></div>
           </div>
@@ -5193,8 +5202,8 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
         <div class="hero-scene" id="hero-scene-2">
           <div class="hero-media-wrap">
             <video class="hero-video-elem" id="hero-video-2" autoplay loop muted playsinline poster="https://images.pexels.com/photos/13914273/pexels-photo-13914273.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1260&h=750&dpr=1">
-              <source src="https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_25fps.mp4" type="video/mp4">
-              <source src="https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_25fps.mp4" type="video/mp4">
+              <source src="https://videos.pexels.com/video-files/3858829/3858829-hd_1280_720_24fps.mp4" type="video/mp4">
+              <source src="https://videos.pexels.com/video-files/3858829/3858829-hd_1280_720_24fps.mp4" type="video/mp4">
             </video>
             <div class="hero-sheer-overlay"></div>
           </div>
@@ -6661,7 +6670,7 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
         <!-- Cinema Video Screen -->
         <div class="video-viewport reveal-box">
           <video id="stage-feature-video" class="video-screen" loop playsinline poster="https://images.pexels.com/photos/6821435/pexels-photo-6821435.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1260&h=750&dpr=1">
-            <source src="https://videos.pexels.com/video-files/7578552/7578552-hd_1920_1080_30fps.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/7293628/7293628-hd_1280_720_30fps.mp4" type="video/mp4">
           </video>
           <div class="video-transport-bar">
             <div>
@@ -7325,8 +7334,8 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
 
     if (heroVideoElem && heroToggleBtn && toggleCaption) {
       var isResortHero = true;
-      var heroVideoPath = 'https://videos.pexels.com/video-files/7578552/7578552-hd_1920_1080_30fps.mp4';
-      var liveVideoPath = 'https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_25fps.mp4';
+      var heroVideoPath = 'https://videos.pexels.com/video-files/7293628/7293628-hd_1280_720_30fps.mp4';
+      var liveVideoPath = 'https://videos.pexels.com/video-files/3858829/3858829-hd_1280_720_24fps.mp4';
 
       heroToggleBtn.addEventListener('click', function () {
         isResortHero = !isResortHero;
@@ -7447,6 +7456,7 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
     var isMorphTicking = false;
     var cachedMorphTop = 0;
     var cachedMorphDist = 0;
+    var lastMorphMetricsAt = 0;
 
     function updateMorphMetrics() {
       if (!morphSection) return;
@@ -7460,7 +7470,8 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
     updateMorphMetrics();
 
     function onMorphScroll() {
-      updateMorphMetrics();
+      var nowMsM = Date.now();
+      if (nowMsM - lastMorphMetricsAt > 250) { updateMorphMetrics(); lastMorphMetricsAt = nowMsM; }
       if (!morphSection || cachedMorphDist <= 0) return;
       var top = window.pageYOffset || document.documentElement.scrollTop;
       var scrolled = top - cachedMorphTop;
@@ -7610,9 +7621,14 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
         if (idx === stepIndex) {
           pill.classList.add('active');
           pill.setAttribute('aria-selected', 'true');
-          // Auto scroll horizontal rail to center active pill on mobile
-          if (pill.scrollIntoView && window.innerWidth < 900) {
-            pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          // Auto scroll horizontal rail to center active pill on mobile.
+          // Rail-only scroll: scrollIntoView would also smooth-scroll the PAGE
+          // (block:'nearest') and fight the user's finger while swiping through
+          // the pinned stage — the reported "stuck at facilities" on phones.
+          if (window.innerWidth < 900 && pill.parentElement) {
+            var rail = pill.parentElement;
+            var targetLeft = rail.scrollLeft + (pill.getBoundingClientRect().left - rail.getBoundingClientRect().left) - (rail.clientWidth / 2) + (pill.offsetWidth / 2);
+            rail.scrollTo({ left: targetLeft, behavior: 'smooth' });
           }
         } else {
           pill.classList.remove('active');
@@ -7645,6 +7661,7 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
     var isFacilitiesTicking = false;
     var cachedFacTop = 0;
     var cachedFacDist = 0;
+    var lastFacMetricsAt = 0;
 
     function updateFacilitiesMetrics() {
       if (!facilitiesSection) return;
@@ -7658,7 +7675,8 @@ html:not([data-theme="light"]) .map-panel { background: linear-gradient(165deg, 
     updateFacilitiesMetrics();
 
     function onFacilitiesScroll() {
-      updateFacilitiesMetrics();
+      var nowMsF = Date.now();
+      if (nowMsF - lastFacMetricsAt > 250) { updateFacilitiesMetrics(); lastFacMetricsAt = nowMsF; }
       if (!facilitiesSection || cachedFacDist <= 0) return;
       var top = window.pageYOffset || document.documentElement.scrollTop;
       var scrolled = top - cachedFacTop;
